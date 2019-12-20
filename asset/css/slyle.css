@@ -1,0 +1,23 @@
+.info-icons img{
+    width: 24px;
+    margin-right: 10px;
+}
+.info-icons span{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.skill-block{
+    text-align: center;
+}
+
+.skill-block img{
+    margin-right: 5px;
+    width: 64px;
+}
+
+@media (max-width:768px){
+    .skill-block{
+        text-align: left;
+    }
+}
