@@ -1,23 +1,44 @@
-.info-icons img{
+.body {
+    min-height: 100%;
+}
+
+.info-icons img {
     width: 24px;
     margin-right: 10px;
 }
-.info-icons span{
+
+.info-icons span {
     display: inline-block;
     margin-bottom: 5px;
 }
 
-.skill-block{
+.skill-block {
     text-align: center;
 }
 
-.skill-block img{
+.skill-block img {
     margin-right: 5px;
     width: 64px;
 }
 
-@media (max-width:768px){
-    .skill-block{
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #152238;
+    color: #D3D3D3;
+    text-align: center;
+}
+
+.footer p {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 48px;
+    line-height: 48px;
+}
+
+@media (max-width:768px) {
+    .skill-block {
         text-align: left;
     }
 }
