@@ -45,6 +45,19 @@ html, body {
     line-height: 48px;
 }
 
+.card-body{
+    padding-top: 10px;
+}
+
+.card-body p{
+    margin-bottom: 8px;
+}
+
+.card-body .badge{
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
 @media (max-width:768px) {
     .skill-block {
         text-align: left;
