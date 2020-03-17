@@ -54,7 +54,7 @@ html, body {
 }
 
 .card-body .badge{
-    margin-right: 3px;
+    margin-right: 0px;
     margin-bottom: 8px;
 }
 
