@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.page-context {
+    min-height: 100%;
+    position: relative;
+}
+
+.info-icons img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.info-icons span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.skill-block {
+    text-align: center;
+}
+
+.skill-block img {
+    margin-right: 5px;
+    width: 64px;
+}
+
+.footer {
+    background-color: #152238;
+    color: #D3D3D3;
+    text-align: center;
+    height: 48px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 48px;
+    line-height: 48px;
+}
+
+.card-body{
+    padding-top: 10px;
+}
+
+.card-body p{
+    margin-bottom: 8px;
+}
+
+.card-body .badge{
+    margin-right: 0px;
+    margin-bottom: 8px;
+}
+
+.card-links{
+    position: absolute;
+    bottom: 15px;
+}
+
+@media (max-width:768px) {
+    .skill-block {
+        text-align: left;
+    }
+}
