@@ -77,8 +77,8 @@ export class projectBlock extends Component {
                     </CardBodyContent>
                     <CardBodyContent _width={'70%'}>
                         {/* tags */}
-                        {tags.map((t) => {
-                            return <Tag className="badge badge-secondary">{t}</Tag>
+                        {tags.map((t,i) => {
+                            return <Tag key={i} className="badge badge-secondary">{t}</Tag>
                         })}
                         <br />
 
@@ -88,9 +88,10 @@ export class projectBlock extends Component {
                         {/* button links */}
                         <ButtonLinks>
                             {/* LinkButton type:[web|demo|code]*/}
-                            {links.map((link) => {
+                            {links.map((link, index) => {
                                 return (
                                     <LinkButton
+                                        key={index}
                                         type={link.type}
                                         href={link.href}>
                                         {link.name}

@@ -127,11 +127,11 @@ function App() {
           <div className="col-12 col-md-5">
             <InfoBlock>
               <InfoIcons>
-                <span><img src={require('./assets/img/003-point.png')} alt="" srcset="" />臺灣，臺中</span><br />
-                <span><img src={require('./assets/img/004-mail.png')} alt="" srcset="" />p208p2002@gmail.com</span><br />
-                <span><img src={require('./assets/img/001-cat.png')} alt="" srcset="" /><a
+                <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />臺灣，臺中</span><br />
+                <span><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
+                <span><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" /><a
                   href="https://github.com/p208p2002">https://github.com/p208p2002</a></span><br />
-                <span><img src={require('./assets/img/002-wordpress.png')} alt="" srcset="" /><a
+                <span><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" /><a
                   href="https://blog.thecodingday.com">https://blog.thecodingday.com</a></span><br />
               </InfoIcons>
             </InfoBlock>
@@ -140,9 +140,9 @@ function App() {
 
         {/* tech */}
         <BlockTitle>技術棧</BlockTitle>
-        <div class="row">
+        <div className="row">
           {skills.map((skill, index) => {
-            return <div key={index} class="col-12 col-md-6">
+            return <div key={index} className="col-12 col-md-6">
               {skill}
             </div>
           })}
@@ -150,9 +150,9 @@ function App() {
 
         {/* projects */}
         <BlockTitle>精選項目</BlockTitle>
-        <div class="row">
+        <div className="row">
           {projects.map((project, index) => {
-            return <div key={index} class="col-12 col-lg-6">
+            return <div key={index} className="col-12 col-lg-6">
               {project}
             </div>
           })}

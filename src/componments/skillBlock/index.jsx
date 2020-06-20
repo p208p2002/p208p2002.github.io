@@ -16,8 +16,8 @@ export class index extends Component {
         return (
             <SkillBlock>
                 <h5>{name}</h5>
-                {images.map((image) => {
-                    return <img src={image} alt="" srcset="" />
+                {images.map((image, index) => {
+                    return <img key={index} src={image} alt="" srcSet="" />
                 })}
                 <br />
                 <br />
