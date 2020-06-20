@@ -109,7 +109,7 @@ const projects = [
 
 function App() {
   return (
-    <>
+    <div className="animated fadeIn">
     <PageContext className="container">
       <Header />
       <div className="row">
@@ -155,7 +155,7 @@ function App() {
       </div>
     </PageContext>
     <Footer>2020 © Philip Huang</Footer>
-    </>
+    </div>
   );
 }
 
