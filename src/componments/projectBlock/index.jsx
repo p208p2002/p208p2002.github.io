@@ -32,6 +32,7 @@ const ImageFrame = styled.div`
     position: relative;
 `
 const Image = styled.img`
+    border-radius: 10px;
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -63,15 +64,15 @@ const Tag = styled.span.attrs((props) => {
 
 export class projectBlock extends Component {
     render() {
-        let { tags = [], links = [] } = this.props
+        let { tags = [], links = [], previewImg = require('../../assets/img/001-cat.png') } = this.props
         return (
             <BlockContainer className="card">
-                <h5 className="card-header">{this.props.name}</h5>
+                <h5 className="card-header" style={{padding:'10px 12px',fontSize:16}}>{this.props.name}</h5>
                 <div className="card-body" style={{ padding: 10 }}>
                     {/* preview image */}
                     <CardBodyContent _width={'30%'}>
                         <ImageFrame>
-                            <Image src={require('../../assets/img/001-cat.png')} />
+                            <Image src={previewImg} />
                         </ImageFrame>
                     </CardBodyContent>
                     <CardBodyContent _width={'70%'}>
