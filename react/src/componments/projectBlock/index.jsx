@@ -6,14 +6,14 @@ props
     links:obj list {name,type,href}
 */
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import LinkButton from './linkButton.jsx'
+import LinkButton from './linkButton.jsx';
 
 const BlockContainer = styled.div`
     height:210px;
     padding:0;
-    max-width:500px;
+    margin-bottom:15px;
 `;
 
 const CardBodyContent = styled.div`
