@@ -70,6 +70,15 @@ const skills = [
 // projects
 const projects = [
   <ProjectBlock
+    name="台北QA問答機器人"
+    content="基於實驗室蒐集的問答資料集之問答分類模型(使用BERT、ALBERT)"
+    tags={['NLP', 'PyTorch', 'BERT']}
+    gitRepoName={'p208p2002/taipei-QA-BERT'}
+    links={[
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT' },
+    ]}
+  />,
+  <ProjectBlock
     name="Querator AI 前端展示系統"
     previewImg={require('./assets/img/querator_ai.png')}
     content="問句生成的AI展示系統，負責前端開發與API串接"
@@ -110,6 +119,17 @@ const projects = [
     links={[
       { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/docker-for-ai-dev' },
       { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev' }
+    ]}
+  />,
+  <ProjectBlock
+    name="PC Monitor"
+    previewImg={require('./assets/img/pc-monitor.png')}
+    content="monitor usage of memory and cpu"
+    tags={['React', 'Electron']}
+    gitRepoName={'p208p2002/pc-monitor'}
+    links={[
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor' },
+      { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }
     ]}
   />
 ]
