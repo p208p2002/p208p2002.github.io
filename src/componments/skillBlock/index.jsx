@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const SkillBlock = styled.div`
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 25px;    
     & img {
-        margin-right: 5px;
+        margin-right: 10px;
         width: 64px;
 }
 `;
