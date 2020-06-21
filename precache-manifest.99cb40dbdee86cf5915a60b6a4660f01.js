@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "797d5135e2c519b75821a7d20901df19",
+    "revision": "ebeabe6db03007b78dee0ebf233c28d7",
     "url": "/index.html"
   },
   {
-    "revision": "55195ef47c8e7f2b2bb4",
+    "revision": "9885bfd0d986dbefe512",
     "url": "/static/css/main.1430288b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.e3a1ca7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "55195ef47c8e7f2b2bb4",
-    "url": "/static/js/main.11db10df.chunk.js"
+    "revision": "9885bfd0d986dbefe512",
+    "url": "/static/js/main.ce32743f.chunk.js"
   },
   {
     "revision": "29a768c22cd0909331d2",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d52287738b55788ea70175d566102073",
     "url": "/static/media/laravel.d5228773.svg"
+  },
+  {
+    "revision": "80d8f3a1c9b115c91a999d04b7eacc2d",
+    "url": "/static/media/pc-monitor.80d8f3a1.png"
   },
   {
     "revision": "f006806312dbf953a01945bc57c25740",
