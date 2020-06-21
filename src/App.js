@@ -124,7 +124,7 @@ const projects = [
   <ProjectBlock
     name="PC Monitor"
     previewImg={require('./assets/img/pc-monitor.png')}
-    content="monitor usage of memory and cpu"
+    content="角落懸浮電腦狀態監視器(CPU、RAM)"
     tags={['React', 'Electron']}
     gitRepoName={'p208p2002/pc-monitor'}
     links={[
