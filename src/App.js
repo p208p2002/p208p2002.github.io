@@ -140,9 +140,9 @@ function App() {
       <PageContext className="container">
         <Header />
         <div className="row">
-          <div className="col-12 col-md-5 offset-md-2">
+          <div className="col-12 col-md-5 offset-lg-2">
             <InfoBlock title="關於我">
-              <p>全端開發與佈署經驗，熟悉JS ES6+與SPA前端開發</p>
+              <p>全端開發與佈署經驗，熟悉ReactJS與相關主流套件</p>
               <p>目前是<a href="http://udiclab.cs.nchu.edu.tw" target="_blank" rel="noopener noreferrer">UDIC LAB</a>的成員，正在研究NLP(自然語言處理)</p>
               <p>喜歡攝影、咖啡跟電影，偶爾做些Side Project</p>
             </InfoBlock>
@@ -161,7 +161,7 @@ function App() {
           </div>
         </div>
 
-        {/* tech */}
+        {/* skills */}
         <BlockTitle>技術棧</BlockTitle>
         <div className="row">
           {skills.map((skill, index) => {
@@ -181,7 +181,9 @@ function App() {
           })}
         </div>
       </PageContext>
-      <Footer>2020 © Philip Huang</Footer>
+
+      {/* footer */}
+      <Footer>{new Date().getFullYear()} © Philip Huang</Footer>
     </div>
   );
 }
