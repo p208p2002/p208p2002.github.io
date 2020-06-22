@@ -102,6 +102,11 @@ export class projectBlock extends Component {
                         updated_at
                     })
                 })
+                .catch(()=>{
+                    this.setState({
+                        hasGitRepoName:false
+                    })
+                })
                 .finally(() => {
                     this.setState({
                         fetchingRepoStatus: false

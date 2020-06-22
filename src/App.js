@@ -104,7 +104,7 @@ const projects = [
     previewImg={require('./assets/img/qts.png')}
     content="帶有旅遊景點資料庫的，全/半自動旅遊排程推薦系統。來一趟說走就走的旅遊🛫"
     tags={['React', 'Laravel', 'RWD', 'PWA', 'GOOGLE Map', '會員系統']}
-    gitRepoName={'p208p2002/quick-travel-schedule'}
+    // gitRepoName={'p208p2002/quick-travel-schedule'}
     links={[
       { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/quick-travel-schedule' },
       { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com' }
@@ -126,7 +126,7 @@ const projects = [
     previewImg={require('./assets/img/pc-monitor.png')}
     content="角落懸浮電腦狀態監視器(CPU、RAM)"
     tags={['React', 'Electron']}
-    gitRepoName={'p208p2002/pc-monitor'}
+    // gitRepoName={'p208p2002/pc-monitor'}
     links={[
       { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor' },
       { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }
