@@ -31,10 +31,10 @@ const skills = [
   <SkillBlock
     name="前端"
     images={[
-      require('./assets/img/007-html-5-1.png'),
-      require('./assets/img/006-css.png'),
+      // require('./assets/img/007-html-5-1.png'),
       require('./assets/img/008-javascript.png'),
-      require('./assets/img/react.ico')
+      require('./assets/img/react.ico'),
+      require('./assets/img/redux.png')
     ]}
     content="熟悉JS ES6與npm等熱門工具的使用，擅長使用ReactJS、Redux"
   />,
