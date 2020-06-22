@@ -13,6 +13,7 @@ import LinkButton from './linkButton.jsx';
 import ReactLoading from 'react-loading';
 import { GoStar, GoRepoForked } from "react-icons/go";
 const axios = require('axios');
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 
 const BlockContainer = styled.div`
     height:210px;
@@ -22,29 +23,31 @@ const BlockContainer = styled.div`
 
 const CardBodyContent = styled.div`
     float:left;
-    width:${props => props._width};
+    width:${(props)=>{
+        return props._width
+    }};
     padding-right:10px;
     height:100%;
     &:after{
-        clear: left;
+        clear: both;
     }
 `
 
 const ImageFrame = styled.div`
-    height: 100%; /* Can be anything */
-    width: 100%; /* Can be anything */
+    height: ${isSafari?'148px':'100%'};
+    width: ${isSafari?'148px':'100%'};
     position: relative;
 `
 const Image = styled.img`
     border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: ${isSafari?'120px':'100%'};
+    max-width: ${isSafari?'120px':'100%'};
     width: auto;
     height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: ${isSafari?'-25px':'0'};
     right: 0;
     margin: auto;
 `
@@ -84,11 +87,12 @@ export class projectBlock extends Component {
         super(props)
         this.state = {
             hasGitRepoName: props.gitRepoName ? true : false,
-            fetchingRepoStatus: props.gitRepoName ? true : false
+            fetchingRepoStatus: props.gitRepoName ? true : false,
         }
     }
 
     componentDidMount() {
+
         let { gitRepoName } = this.props
         if (gitRepoName) {
             axios.get('https://api.github.com/repos/' + gitRepoName)
