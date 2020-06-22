@@ -183,7 +183,11 @@ function App() {
       </PageContext>
 
       {/* footer */}
-      <Footer>{new Date().getFullYear()} © Philip Huang</Footer>
+      <Footer>
+        {new Date().getFullYear()} © Philip Huang
+        <br/>
+        <small>Powered by ReactJS</small>
+      </Footer>
     </div>
   );
 }

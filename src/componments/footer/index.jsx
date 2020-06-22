@@ -5,16 +5,17 @@ const Footer = styled.div`
     background-color: #152238;
     color: #D3D3D3;
     text-align: center;
-    height: 48px;
+    /* height: 48px; */
     box-sizing: border-box;
+    padding: 5px;
     /* position: absolute; */
     /* bottom: 0; */
     width: 100%;
     & p {
         margin-top: auto;
         margin-bottom: auto;
-        height: 48px;
-        line-height: 48px;
+        /* height: 48px; */
+        /* line-height: 48px; */
     }
 `;
 
