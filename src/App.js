@@ -31,37 +31,36 @@ const skills = [
   <SkillBlock
     name="前端"
     images={[
-      // require('./assets/img/007-html-5-1.png'),
-      require('./assets/img/008-javascript.png'),
-      require('./assets/img/react.ico'),
-      require('./assets/img/redux.png')
+      {name:'JavaScript ES6',src:require('./assets/img/008-javascript.png')},
+      {name:'React JS',src:require('./assets/img/react.ico')},
+      {name:'Redux',src:require('./assets/img/redux.png')},
     ]}
     content="熟悉JS ES6與npm等熱門工具的使用，擅長使用ReactJS、Redux"
   />,
   <SkillBlock
     name="後端"
     images={[
-      require('./assets/img/011-php.png'),
-      require('./assets/img/laravel.svg'),
-      require('./assets/img/012-mysql.png'),
+      {name:'PHP 7',src:require('./assets/img/011-php.png')},
+      {name:'Laravel',src:require('./assets/img/laravel.svg')},
+      {name:'MySQL',src:require('./assets/img/012-mysql.png')}
     ]}
     content="使用Laravel開發RESTful風格API，與內容管理系統之經驗"
   />,
   <SkillBlock
     name="自然語言處理"
     images={[
-      require('./assets/img/010-python.png'),
-      require('./assets/img/DeepLearning.jpg'),
-      require('./assets/img/pytorch-logo.png'),
+      {name:'Python 3',src:require('./assets/img/010-python.png')},
+      {name:'Deep Learning',src:require('./assets/img/DeepLearning.jpg')},
+      {name:'Pytorch',src:require('./assets/img/pytorch-logo.png')}
     ]}
     content="搭配深度學習技術、框架(PyTorch)研究NLP相關項目"
   />,
   <SkillBlock
     name="其他"
     images={[
-      require('./assets/img/ubuntu.svg'),
-      require('./assets/img/docker.svg'),
-      require('./assets/img/github.svg'),
+      {name:'Ubuntu',src:require('./assets/img/ubuntu.svg')},
+      {name:'Docker',src:require('./assets/img/docker.svg')},
+      {name:'Git & GitHub',src:require('./assets/img/github.svg')}
     ]}
     content="網站佈署流程與設定 / docker管理 / 版本控制"
   />

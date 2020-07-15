@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import ReactTooltip from 'react-tooltip';
 
 const SkillBlock = styled.div`
     text-align: center;
@@ -31,16 +32,20 @@ export class index extends Component {
     render() {
         let { name = '', images = [], content = '' } = this.props
         return (
-            <SkillBlock>
-                <h5>{name}</h5>
-                <Images>
-                    {images.map((image, index) => {
-                        return <img key={index} src={image} alt="" srcSet="" />
-                    })}
-                </Images>
-                <br />
-                <span>{content}</span>
-            </SkillBlock>
+            <>
+                <ReactTooltip effect="solid"/>
+                <SkillBlock>
+                    <h5>{name}</h5>
+                    <Images>
+                        {images.map((image, index) => {
+                            let {name='',src=''} = image
+                            return <img data-tip={name} key={index} src={src} alt="" srcSet="" />
+                        })}
+                    </Images>
+                    <br />
+                    <span>{content}</span>
+                </SkillBlock>
+            </>
         )
     }
 }
