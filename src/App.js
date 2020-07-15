@@ -31,7 +31,7 @@ const skills = [
   <SkillBlock
     name="前端"
     images={[
-      {name:'JavaScript ES6',src:require('./assets/img/008-javascript.png')},
+      {name:'JavaScript ES6+',src:require('./assets/img/008-javascript.png')},
       {name:'React JS',src:require('./assets/img/react.ico')},
       {name:'Redux',src:require('./assets/img/redux.png')},
     ]}

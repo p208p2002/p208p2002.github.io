@@ -13,13 +13,14 @@ const Images = styled.div`
         margin-bottom:18px;
         margin-right: 20px;
         width: 64px;
+        transition: 0.15s;
     }
 
     & img:hover{
         margin-top:0px;
         margin-bottom:0px;
         margin-right: 20px;
-        width: 90px;
+        width: 95px;
         transition: 0.3s;
     }
 
