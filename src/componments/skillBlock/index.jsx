@@ -8,9 +8,20 @@ const SkillBlock = styled.div`
 
 const Images = styled.div`
     & img {
-        margin-right: 18px;
+        margin-top:18px;
+        margin-bottom:18px;
+        margin-right: 20px;
         width: 64px;
     }
+
+    & img:hover{
+        margin-top:0px;
+        margin-bottom:0px;
+        margin-right: 20px;
+        width: 90px;
+        transition: 0.3s;
+    }
+
     & :nth-last-child(1){
         margin-right: 0px;
     }
