@@ -136,7 +136,7 @@ const projects = [
 
 function App() {
   return (
-    <div className="animated fadeIn">
+    <div className="animate__animated animate__fadeIn">
       <PageContext className="container">
         <Header />
         <div className="row">
