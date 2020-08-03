@@ -12,7 +12,7 @@ const resources = {
       "臺灣，臺中":"Taiwan, Taichang",
       "全端開發與佈署經驗，熟悉ReactJS與相關主流套件":"Full Stack Develpoer, Familiar with ES6+, ReactJS and it's popular packages.",
       "目前是 UDIC@NCHU 的成員，主要研究領域為自然語言處理(Natural Language Processing)":"Member of UDIC@NCHU, Natural Language Processing(NLP) is my field of research.",
-      "喜歡攝影、咖啡跟電影，偶爾做些Side Project":"My hobby is Photography, Coffee and Movie, also Side Project too.",
+      "喜歡攝影、咖啡跟電影，偶爾做些Side Project":"🏌️‍♂️ Photography, Coffee and Movie, also Side Project too.",
       "技術棧":"Skills",
       "前端":"Front-End",
       "後端":"Back-End",
