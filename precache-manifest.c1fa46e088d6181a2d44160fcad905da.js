@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d118473f5a231b6c4b691fcdd1117893",
+    "revision": "04f38ffbea407cfea1acc37c7964f42a",
     "url": "/index.html"
   },
   {
-    "revision": "0aedc6b1ed1bf75b645b",
+    "revision": "f3150ea4aa0831f2ac7f",
     "url": "/static/css/main.48af0c50.chunk.css"
   },
   {
-    "revision": "ebe6364e99cbde7e5a24",
-    "url": "/static/js/2.f72c7672.chunk.js"
+    "revision": "90fc209d34724e6d2cbc",
+    "url": "/static/js/2.f64d9e28.chunk.js"
   },
   {
     "revision": "e23d72e353070f497294c1592aa53554",
-    "url": "/static/js/2.f72c7672.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f64d9e28.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0aedc6b1ed1bf75b645b",
-    "url": "/static/js/main.537a1c17.chunk.js"
+    "revision": "f3150ea4aa0831f2ac7f",
+    "url": "/static/js/main.1be9c14e.chunk.js"
   },
   {
     "revision": "29a768c22cd0909331d2",
     "url": "/static/js/runtime-main.e5a428e6.js"
-  },
-  {
-    "revision": "3785c54fef39a98df46224fdb6c44cd7",
-    "url": "/static/media/DeepLearning.3785c54f.jpg"
   },
   {
     "revision": "693f873a2836f5dd457630b6407cc08a",
@@ -38,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "92d3d50bd4ab1d0dcfab3b2e26c2d63e",
     "url": "/static/media/github.92d3d50b.svg"
+  },
+  {
+    "revision": "4b36213a0dc3aadbe66d16000183d9e7",
+    "url": "/static/media/huggingface_logo.4b36213a.svg"
   },
   {
     "revision": "d52287738b55788ea70175d566102073",
