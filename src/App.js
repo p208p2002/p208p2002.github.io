@@ -75,8 +75,8 @@ function App() {
   // projects
   const projects = [
     <ProjectBlock
-      name="台北QA問答機器人"
-      content="基於實驗室蒐集的問答資料集之問答分類模型(使用BERT、ALBERT)"
+      name={t("台北QA問答機器人")}
+      content={t("基於實驗室蒐集的問答資料集之問答分類模型(使用BERT、ALBERT)")}
       tags={['NLP', 'PyTorch', 'BERT']}
       gitRepoName={'p208p2002/taipei-QA-BERT'}
       links={[
@@ -84,9 +84,9 @@ function App() {
       ]}
     />,
     <ProjectBlock
-      name="Querator AI 前端展示系統"
+      name={t("Querator AI 前端展示系統")}
       previewImg={require('./assets/img/querator_ai.png')}
-      content="問句生成的AI展示系統，負責前端開發與API串接"
+      content={t("問句生成的AI展示系統，負責前端系統開發與API設計")}
       tags={['React', 'AI DEMO']}
       links={[
         { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html' },
@@ -94,9 +94,9 @@ function App() {
       ]}
     />,
     <ProjectBlock
-      name="鸚鵡兄弟文字圖產生器"
+      name={t("鸚鵡兄弟文字圖產生器")}
       previewImg={require('./assets/img/yinwubrother.jpg')}
-      content="可愛的鸚鵡兄弟梗圖生產器、快速上字與分享"
+      content={t("可愛的鸚鵡兄弟梗圖生產器、快速上字與分享")}
       tags={['React', 'RWD', 'meme']}
       gitRepoName={'p208p2002/yinwubrother-textmaker-react'}
       links={[
@@ -105,9 +105,9 @@ function App() {
       ]}
     />,
     <ProjectBlock
-      name="自動旅遊排程系統"
+      name={t("自動旅遊排程系統")}
       previewImg={require('./assets/img/qts.png')}
-      content="帶有旅遊景點資料庫的，全/半自動旅遊排程推薦系統。來一趟說走就走的旅遊🛫"
+      content={t("帶有旅遊景點資料庫的，全/半自動旅遊排程推薦系統。來一趟說走就走的旅遊🛫")}
       tags={['React', 'Laravel', 'RWD', 'PWA', 'GOOGLE Map', '會員系統']}
       // gitRepoName={'p208p2002/quick-travel-schedule'}
       links={[
@@ -116,9 +116,9 @@ function App() {
       ]}
     />,
     <ProjectBlock
-      name="Docker for AI DEV"
+      name={t("Docker for AI DEV")}
       previewImg={require('./assets/img/docker_q.png')}
-      content="快速建立包含Jupyter、web-vscode和cuda support在內的遠端開發環境"
+      content={t("快速建立包含Jupyter、web-vscode和cuda support在內的遠端開發環境")}
       tags={['Docker', 'dev-env']}
       gitRepoName={'p208p2002/docker-for-ai-dev'}
       links={[
@@ -127,9 +127,9 @@ function App() {
       ]}
     />,
     <ProjectBlock
-      name="PC Monitor"
+      name={t("PC Monitor")}
       previewImg={require('./assets/img/pc-monitor.png')}
-      content="角落懸浮電腦狀態監視器(CPU、RAM)"
+      content={t("角落懸浮電腦狀態監視器(CPU、RAM)")}
       tags={['React', 'Electron']}
       // gitRepoName={'p208p2002/pc-monitor'}
       links={[
@@ -145,7 +145,7 @@ function App() {
       <PageContext className="container">
         <Header />
         <div className="row">
-          <div className="col-12 col-md-5 offset-lg-2">
+          <div className="col-12 col-md-5 offset-lg-2 pt-3 pb-3">
             <InfoBlock title={t("關於我")}>
               <p>{t('全端開發與佈署經驗，熟悉ReactJS與相關主流套件')}</p>
               <p>{t('目前是 UDIC@NCHU 的成員，主要研究領域為自然語言處理(Natural Language Processing)')}</p>
@@ -165,12 +165,12 @@ function App() {
             </InfoBlock>
           </div>
         </div>
-
+        
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
         <div className="row">
           {skills.map((skill, index) => {
-            return <div key={index} className="col-12 col-md-6">
+            return <div key={index} className="col-12 col-md-6 mb-4">
               {skill}
             </div>
           })}
