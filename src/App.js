@@ -31,7 +31,6 @@ const InfoIcons = styled.div`
 function App() {
   const { t } = useTranslation();
 
-
   // skills
   const skills = [
     <SkillBlock
