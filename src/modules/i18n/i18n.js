@@ -34,7 +34,7 @@ const resources = {
       "Docker for AI DEV": "Docker for AI DEV",
       "快速建立包含Jupyter、web-vscode和cuda support在內的遠端開發環境":"Quickly create Docker remote server workplace with PyTorch and Tensorflow.",
       "PC Monitor": "PC Monitor",
-      "角落懸浮電腦狀態監視器(CPU、RAM)":"A PC Monitor made made with ReactJS and Electron, that can float on the corner."
+      "角落懸浮電腦狀態監視器(CPU、RAM)":"A PC Monitor made with ReactJS and Electron, that can float on the corner."
     }
   },
   tw: {
