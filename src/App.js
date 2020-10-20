@@ -155,16 +155,18 @@ function App() {
             <InfoBlock>
               <InfoIcons className="mt-md-4">
                 <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
-                <span><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
-                <span><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" /><a
-                  href="https://github.com/p208p2002">https://github.com/p208p2002</a></span><br />
-                <span><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" /><a
-                  href="https://blog.thecodingday.com">https://blog.thecodingday.com</a></span><br />
+                <span className="mt-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
+                <span className="mt-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
+                <span className="mt-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
+                <a target="_blank" rel="noopener noreferrer" href="https://blog.thecodingday.com">blog.thecodingday.com</a></span><br />
+                <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
+                <a target="_blank" rel="noopener noreferrer" href="https://www.cakeresume.com/s--3tyxEKv5v2KNc2M1pVBBBQ--/p208p2002">cakeresume/p208p2002</a></span><br />
               </InfoIcons>
             </InfoBlock>
           </div>
         </div>
-        
+
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
         <div className="row">
