@@ -161,7 +161,7 @@ function App() {
                 <span className="mt-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
                 <a target="_blank" rel="noopener noreferrer" href="https://blog.thecodingday.com">blog.thecodingday.com</a></span><br />
                 <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
-                <a target="_blank" rel="noopener noreferrer" href="https://www.cakeresume.com/s--3tyxEKv5v2KNc2M1pVBBBQ--/p208p2002">cakeresume/p208p2002</a></span><br />
+                <a target="_blank" rel="noopener noreferrer" href="https://www.cakeresume.com/s--3tyxEKv5v2KNc2M1pVBBBQ--/p208p2002">cakeresume.com/p208p2002</a></span><br />
               </InfoIcons>
             </InfoBlock>
           </div>
