@@ -187,8 +187,9 @@ function App() {
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
                 <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
                   <a
-                    href="#"
-                    onClick={() => {
+                    href="#mycv"
+                    onClick={(e) => {
+                      e.preventDefault()
                       window.print()
                     }}>p208p2002.github.io</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />

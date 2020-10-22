@@ -29,6 +29,7 @@ export class index extends Component {
         let { image, degree, content, school } = this.props
         return (
             <div className="text-center mt-1">
+                <ReactTooltip effect="solid"/>
                 <Images>
                 <img data-tip={school} src={image} className="mb-3" alt="" srcset="" />
                 </Images>
