@@ -144,7 +144,7 @@ function App() {
       <PageContext className="container">
         <Header />
         <div className="row">
-          <div className="col-12 col-md-5 offset-lg-2 pt-3 pb-3">
+          <div className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
             <InfoBlock title={t("關於我")}>
               <p>{t('全端開發與佈署經驗，熟悉ReactJS與相關主流套件')}</p>
               <p>{t('目前是 UDIC@NCHU 的成員，主要研究領域為自然語言處理(Natural Language Processing)')}</p>
@@ -153,15 +153,15 @@ function App() {
           </div>
           <div className="col-12 col-md-5">
             <InfoBlock>
-              <InfoIcons className="mt-md-4">
+              <InfoIcons className="mt-md-4 pt-md-3">
                 <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
-                <span className="mt-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
-                <span className="mt-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
+                <span className="mt-2 mt-sm-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
+                <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
-                <span className="mt-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
+                <span className="mt-2 mt-sm-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
                 <a target="_blank" rel="noopener noreferrer" href="https://blog.thecodingday.com">blog.thecodingday.com</a></span><br />
-                <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
-                <a target="_blank" rel="noopener noreferrer" href="https://www.cakeresume.com/s--3tyxEKv5v2KNc2M1pVBBBQ--/p208p2002">cakeresume.com/p208p2002</a></span><br />
+                {/* <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
+                <a target="_blank" rel="noopener noreferrer" href="https://www.cakeresume.com/s--3tyxEKv5v2KNc2M1pVBBBQ--/p208p2002">cakeresume.com/p208p2002</a></span><br /> */}
               </InfoIcons>
             </InfoBlock>
           </div>
