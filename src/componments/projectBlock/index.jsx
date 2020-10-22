@@ -155,7 +155,7 @@ export class projectBlock extends Component {
                         <br />
 
                         {/* content */}
-                        <p className="card-text">{this.props.content}</p>
+                        <p className="card-text mt-md-2">{this.props.content}</p>
 
                         {/* button links */}
                         <ButtonLinks>
