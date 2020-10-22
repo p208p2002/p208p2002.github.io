@@ -12,6 +12,15 @@ import { useTranslation } from 'react-i18next';
 import ChangLangBtn from './modules/i18n/changLangBtn'
 
 // styled
+const ResumeLink = styled.a`
+  @media print{
+    &:after {
+		    content: '(' attr(href) ')';
+    }
+    font-size:14px;
+  }
+`
+
 const AboutMe = styled.div`
   @media print{
     margin-left:16.6667%;
@@ -186,12 +195,14 @@ function App() {
                 <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
                 <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
-                  <a
-                    href="#mycv"
+                  <ResumeLink
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://p208p2002.github.io"
                     onClick={(e) => {
                       e.preventDefault()
                       window.print()
-                    }}>p208p2002.github.io</a></span><br />
+                    }}>resume.me</ResumeLink></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
                   <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
@@ -210,7 +221,7 @@ function App() {
             </div>
           })}
         </div>
-        <br/>
+        <br />
 
 
         {/* skills */}
