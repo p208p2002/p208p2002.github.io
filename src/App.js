@@ -85,7 +85,7 @@ function App() {
       tags={['NLP', 'PyTorch', 'BERT']}
       gitRepoName={'p208p2002/taipei-QA-BERT'}
       links={[
-        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT', showInPrint:true},
+        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT', showInPrint: true },
       ]}
     />,
     <ProjectBlock
@@ -94,7 +94,7 @@ function App() {
       content={t("問句生成的AI展示系統，負責前端系統開發與API設計")}
       tags={['React', 'AI DEMO']}
       links={[
-        { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint:true },
+        { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint: true },
         { name: 'Demo', type: 'demo', href: 'http://140.120.13.249:3000' }
       ]}
     />,
@@ -106,7 +106,7 @@ function App() {
       gitRepoName={'p208p2002/yinwubrother-textmaker-react'}
       links={[
         { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/yinwubrother-textmaker-react' },
-        { name: 'Demo', type: 'demo', href: 'https://p208p2002.github.io/yinwubrother-textmaker-react', showInPrint:true}
+        { name: 'Demo', type: 'demo', href: 'https://p208p2002.github.io/yinwubrother-textmaker-react', showInPrint: true }
       ]}
     />,
     <ProjectBlock
@@ -117,7 +117,7 @@ function App() {
       // gitRepoName={'p208p2002/quick-travel-schedule'}
       links={[
         { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/quick-travel-schedule' },
-        { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com', showInPrint:true}
+        { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com', showInPrint: true }
       ]}
     />,
     <ProjectBlock
@@ -127,8 +127,8 @@ function App() {
       tags={['Docker', 'dev-env']}
       gitRepoName={'p208p2002/docker-for-ai-dev'}
       links={[
-        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/docker-for-ai-dev', showInPrint:true},
-        { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev'}
+        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/docker-for-ai-dev', showInPrint: true },
+        { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev' }
       ]}
     />,
     <ProjectBlock
@@ -138,7 +138,7 @@ function App() {
       tags={['React', 'Electron']}
       // gitRepoName={'p208p2002/pc-monitor'}
       links={[
-        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint:true },
+        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint: true },
         { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }
       ]}
     />
@@ -160,15 +160,19 @@ function App() {
           </div>
           <div className="col-12 col-md-5">
             <InfoBlock>
-              <InfoIcons className="mt-md-4 pt-md-3">
+              <InfoIcons className="mt-md-4 pt-md-1">
                 <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
+                <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
+                <a
+                  href="#"
+                  onClick={()=>{
+                  window.print()
+                }}>p208p2002.github.io</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
-                <a target="_blank" rel="noopener noreferrer" href="https://blog.thecodingday.com">blog.thecodingday.com</a></span><br />
-                {/* <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
-                <a target="_blank" rel="noopener noreferrer" href="https://www.cakeresume.com/s--3tyxEKv5v2KNc2M1pVBBBQ--/p208p2002">cakeresume.com/p208p2002</a></span><br /> */}
+                  <a target="_blank" rel="noopener noreferrer" href="https://blog.thecodingday.com">blog.thecodingday.com</a></span><br />
               </InfoIcons>
             </InfoBlock>
           </div>
