@@ -34,7 +34,14 @@ const resources = {
       "Docker for AI DEV": "Docker for AI DEV",
       "快速建立包含Jupyter、web-vscode和cuda support在內的遠端開發環境":"Quickly create Docker remote server workplace with PyTorch and Tensorflow.",
       "PC Monitor": "PC Monitor",
-      "角落懸浮電腦狀態監視器(CPU、RAM)":"A PC Monitor made with ReactJS and Electron, that can float on the corner."
+      "角落懸浮電腦狀態監視器(CPU、RAM)":"A PC Monitor made with ReactJS and Electron, that can float on the corner.",
+      "學歷":"Education",
+      "碩士":"Master",
+      "學士":"Bachelor",
+      "國立中興大學":"National Chung Hsing University",
+      "國立臺中科技大學":"National Taichung University of Science and Technology",
+      "國立中興大學, 資訊科學與工研究所, 2019~2021":"NCHU, Computer Science and Engineering, 2019~2021",
+      "國立臺中科技大學, 資訊工程學系, 2015~2019":"NUTC, Computer Science and Engineering, 2015~2019"
     }
   },
   tw: {

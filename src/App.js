@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
+import EducationBlock from './componments/educationBlock'
 import ProjectBlock from './componments/projectBlock'
 import Header from './componments/header'
 import InfoBlock from './componments/infoBlock'
@@ -42,6 +43,21 @@ const InfoIcons = styled.div`
 
 function App() {
   const { t } = useTranslation();
+  // educations
+  const educations = [
+    <EducationBlock
+      degree={t("碩士")}
+      image={require('./assets/img/nchu2.png')}
+      school={t("國立中興大學")}
+      content={t("國立中興大學, 資訊科學與工研究所, 2019~2021")}
+    />,
+    <EducationBlock
+      degree={t("學士")}
+      image={require('./assets/img/nutc.gif')}
+      school={t("國立臺中科技大學")}
+      content={t("國立臺中科技大學, 資訊工程學系, 2015~2019")}
+    />
+  ]
 
   // skills
   const skills = [
@@ -183,6 +199,18 @@ function App() {
             </InfoBlock>
           </div>
         </AboutMe>
+
+        {/* education */}
+        <BlockTitle>{t('學歷')}</BlockTitle>
+        <div className="row">
+          {educations.map((education, index) => {
+            return <div key={index} className="col-6">
+              {education}
+            </div>
+          })}
+        </div>
+        <br/>
+
 
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
