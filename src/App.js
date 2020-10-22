@@ -11,6 +11,12 @@ import { useTranslation } from 'react-i18next';
 import ChangLangBtn from './modules/i18n/changLangBtn'
 
 // styled
+const AboutMe = styled.div`
+  @media print{
+    margin-left:16.6667%;
+  }
+`
+
 const PageContext = styled.div`
   min-height: calc(100% - 48px);
   padding-bottom: 15px;
@@ -143,7 +149,8 @@ function App() {
       <ChangLangBtn />
       <PageContext className="container">
         <Header />
-        <div className="row">
+
+        <AboutMe className="row">
           <div className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
             <InfoBlock title={t("關於我")}>
               <p>{t('全端開發與佈署經驗，熟悉ReactJS與相關主流套件')}</p>
@@ -165,7 +172,7 @@ function App() {
               </InfoIcons>
             </InfoBlock>
           </div>
-        </div>
+        </AboutMe>
 
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>

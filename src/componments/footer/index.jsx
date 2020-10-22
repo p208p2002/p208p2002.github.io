@@ -17,6 +17,9 @@ const Footer = styled.div`
         /* height: 48px; */
         /* line-height: 48px; */
     }
+    @media print{
+        background-color:white;
+    }
 `;
 
 export class index extends Component {

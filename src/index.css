@@ -13,6 +13,14 @@ code {
 
 @page {
   size: A4;
-  margin: 0;
+  /* margin: 35px; */
 }
 
+@media print{
+  body {
+    -webkit-print-color-adjust: exact !important;
+  }
+  div {
+    break-inside: avoid;
+  }
+}
