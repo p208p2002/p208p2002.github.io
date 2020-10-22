@@ -20,7 +20,7 @@ code {
   body {
     -webkit-print-color-adjust: exact !important;
   }
-  div {
-    break-inside: avoid;
+  .print-no-cut{
+    break-inside: avoid !important;
   }
 }

@@ -17,6 +17,12 @@ const AboutMe = styled.div`
   }
 `
 
+const ProjectContext = styled.div`
+  @media print{
+    display:block !important;
+  }
+`
+
 const PageContext = styled.div`
   min-height: calc(100% - 48px);
   padding-bottom: 15px;
@@ -164,11 +170,11 @@ function App() {
                 <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
                 <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
-                <a
-                  href="#"
-                  onClick={()=>{
-                  window.print()
-                }}>p208p2002.github.io</a></span><br />
+                  <a
+                    href="#"
+                    onClick={() => {
+                      window.print()
+                    }}>p208p2002.github.io</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
                   <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
@@ -190,13 +196,13 @@ function App() {
 
         {/* projects */}
         <BlockTitle>{t("精選項目")}</BlockTitle>
-        <div className="row">
+        <ProjectContext className="row">
           {projects.map((project, index) => {
-            return <div key={index} className="col-12 col-lg-6">
+            return <div key={index} className="print-no-cut col-12 col-lg-6">
               {project}
             </div>
           })}
-        </div>
+        </ProjectContext>
       </PageContext>
 
       {/* footer */}
