@@ -41,7 +41,8 @@ const resources = {
       "國立中興大學":"National Chung Hsing University",
       "國立臺中科技大學":"National Taichung University of Science and Technology",
       "國立中興大學, 資訊科學與工研究所, 2019~2021":"NCHU, Computer Science and Engineering, 2019~2021",
-      "國立臺中科技大學, 資訊工程學系, 2015~2019":"NUTC, Computer Science and Engineering, 2015~2019"
+      "國立臺中科技大學, 資訊工程學系, 2015~2019":"NUTC, Computer Science and Engineering, 2015~2019",
+      "網站設計與開發：":"Website design and develop by"
     }
   },
   tw: {

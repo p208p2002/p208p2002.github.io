@@ -249,7 +249,7 @@ function App() {
       <Footer>
         {new Date().getFullYear()} © Philip Huang
         <br />
-        <small>Powered by ReactJS</small>
+        <small>{t("網站設計與開發：")} <b>Philip Huang</b></small>
       </Footer>
     </div>
   );
