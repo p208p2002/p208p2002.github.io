@@ -19,7 +19,6 @@ const BlockContainer = styled.div`
     height:210px;
     padding:0;
     margin-bottom:15px;
-}
 `
 
 const CardBodyContent = styled.div`
