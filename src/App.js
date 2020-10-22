@@ -79,7 +79,7 @@ function App() {
       tags={['NLP', 'PyTorch', 'BERT']}
       gitRepoName={'p208p2002/taipei-QA-BERT'}
       links={[
-        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT' },
+        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT', showInPrint:true},
       ]}
     />,
     <ProjectBlock
@@ -88,7 +88,7 @@ function App() {
       content={t("問句生成的AI展示系統，負責前端系統開發與API設計")}
       tags={['React', 'AI DEMO']}
       links={[
-        { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html' },
+        { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint:true },
         { name: 'Demo', type: 'demo', href: 'http://140.120.13.249:3000' }
       ]}
     />,
@@ -100,7 +100,7 @@ function App() {
       gitRepoName={'p208p2002/yinwubrother-textmaker-react'}
       links={[
         { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/yinwubrother-textmaker-react' },
-        { name: 'Demo', type: 'demo', href: 'https://p208p2002.github.io/yinwubrother-textmaker-react' }
+        { name: 'Demo', type: 'demo', href: 'https://p208p2002.github.io/yinwubrother-textmaker-react', showInPrint:true}
       ]}
     />,
     <ProjectBlock
@@ -111,7 +111,7 @@ function App() {
       // gitRepoName={'p208p2002/quick-travel-schedule'}
       links={[
         { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/quick-travel-schedule' },
-        { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com' }
+        { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com', showInPrint:true}
       ]}
     />,
     <ProjectBlock
@@ -121,8 +121,8 @@ function App() {
       tags={['Docker', 'dev-env']}
       gitRepoName={'p208p2002/docker-for-ai-dev'}
       links={[
-        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/docker-for-ai-dev' },
-        { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev' }
+        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/docker-for-ai-dev', showInPrint:true},
+        { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev'}
       ]}
     />,
     <ProjectBlock
@@ -132,7 +132,7 @@ function App() {
       tags={['React', 'Electron']}
       // gitRepoName={'p208p2002/pc-monitor'}
       links={[
-        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor' },
+        { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint:true },
         { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }
       ]}
     />

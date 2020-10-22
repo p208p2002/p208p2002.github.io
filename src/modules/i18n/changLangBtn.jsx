@@ -16,6 +16,9 @@ let LangBtnStyle = styled.div`
         right: 4px;
         padding-top:6px;
     }
+    @media print{
+        display:none;
+    }
 `
 
 export default function ChangLangBtn() {

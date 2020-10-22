@@ -23,7 +23,7 @@ const BlockContainer = styled.div`
 
 const CardBodyContent = styled.div`
     float:left;
-    width:${(props)=>{
+    width:${(props) => {
         return props._width
     }};
     padding-right:10px;
@@ -34,20 +34,20 @@ const CardBodyContent = styled.div`
 `
 
 const ImageFrame = styled.div`
-    height: ${isSafari?'138px':'100%'};
-    width: ${isSafari?'138px':'100%'};
+    height: ${isSafari ? '138px' : '100%'};
+    width: ${isSafari ? '138px' : '100%'};
     position: relative;
 `
 const Image = styled.img`
     border-radius: 10px;
-    max-height: ${isSafari?'110px':'100%'};
-    max-width: ${isSafari?'110px':'100%'};
+    max-height: ${isSafari ? '110px' : '100%'};
+    max-width: ${isSafari ? '110px' : '100%'};
     width: auto;
     height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: ${isSafari?'-25px':'0'};
+    left: ${isSafari ? '-25px' : '0'};
     right: 0;
     margin: auto;
 `
@@ -106,9 +106,9 @@ export class projectBlock extends Component {
                         updated_at
                     })
                 })
-                .catch(()=>{
+                .catch(() => {
                     this.setState({
-                        hasGitRepoName:false
+                        hasGitRepoName: false
                     })
                 })
                 .finally(() => {
@@ -121,7 +121,7 @@ export class projectBlock extends Component {
 
     render() {
         let { tags = [], links = [], previewImg = require('../../assets/img/001-cat.png') } = this.props
-        let { hasGitRepoName, fetchingRepoStatus, forks_count=0, stargazers_count=0 } = this.state
+        let { hasGitRepoName, fetchingRepoStatus, forks_count = 0, stargazers_count = 0 } = this.state
         return (
             <BlockContainer className="card">
                 {hasGitRepoName ?
@@ -161,8 +161,10 @@ export class projectBlock extends Component {
                         <ButtonLinks>
                             {/* LinkButton type:[web|demo|code]*/}
                             {links.map((link, index) => {
+                                let { showInPrint = false } = link
                                 return (
                                     <LinkButton
+                                        showInPrint={showInPrint}
                                         key={index}
                                         type={link.type}
                                         href={link.href}>
