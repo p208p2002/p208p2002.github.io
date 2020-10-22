@@ -34,14 +34,14 @@ const CardBodyContent = styled.div`
 `
 
 const ImageFrame = styled.div`
-    height: ${isSafari?'148px':'100%'};
-    width: ${isSafari?'148px':'100%'};
+    height: ${isSafari?'138px':'100%'};
+    width: ${isSafari?'138px':'100%'};
     position: relative;
 `
 const Image = styled.img`
     border-radius: 10px;
-    max-height: ${isSafari?'120px':'100%'};
-    max-width: ${isSafari?'120px':'100%'};
+    max-height: ${isSafari?'110px':'100%'};
+    max-width: ${isSafari?'110px':'100%'};
     width: auto;
     height: auto;
     position: absolute;

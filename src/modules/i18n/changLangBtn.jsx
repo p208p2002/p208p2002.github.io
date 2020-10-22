@@ -12,7 +12,9 @@ let LangBtnStyle = styled.div`
         left: 3px;
     }
     @media(max-width:768px){
-        right: 3px;
+        position: absolute;
+        right: 4px;
+        padding-top:6px;
     }
 `
 
