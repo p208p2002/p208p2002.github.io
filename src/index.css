@@ -1,14 +1,13 @@
-html,body,#root {
+html, body, #root {
   height: 100% !important;
   margin: 0;
-  font-family:'Noto Sans TC', sans-serif !important;
+  font-family: 'Noto Sans TC', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 @page {
@@ -16,11 +15,11 @@ code {
   /* margin: 35px; */
 }
 
-@media print{
+@media print {
   body {
     -webkit-print-color-adjust: exact !important;
   }
-  .print-no-cut{
+  .print-no-cut {
     break-inside: avoid !important;
   }
 }

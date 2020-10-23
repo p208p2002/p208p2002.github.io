@@ -120,6 +120,7 @@ export class projectBlock extends Component {
     }
 
     render() {
+
         let { tags = [], links = [], previewImg = require('../../assets/img/001-cat.png') } = this.props
         let { hasGitRepoName, fetchingRepoStatus, forks_count = 0, stargazers_count = 0 } = this.state
         return (
