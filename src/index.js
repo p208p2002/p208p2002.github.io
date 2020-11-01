@@ -14,9 +14,11 @@ const ResumeContainer = styled.div`
   padding-bottom:50px;
   background-color:#444444;
   
+  
   & > div{
     width:250mm;
     margin-left:calc(50% - 125mm);
+    box-shadow: 0px 0px 5px 5px #202020;
   }
   @media(max-width:250mm){
     padding-top:0px;
