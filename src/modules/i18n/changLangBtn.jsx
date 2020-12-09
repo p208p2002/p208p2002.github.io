@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next';
+import Cookies from 'js-cookie'
 
 let LangBtnStyle = styled.div`
     position: fixed;
@@ -21,14 +22,19 @@ let LangBtnStyle = styled.div`
     }
 `
 
+let url = new URL(window.location.href)
+let resumeMode = (url.searchParams.get('mode') === 'resume' ? true : false)
+
 export default function ChangLangBtn() {
     const { t, i18n } = useTranslation();
-    const [currentLang, setCurrentLang] = useState(i18n.language)
-    console.log(i18n)
+    let lang = Cookies.get('lang');
+    const [currentLang, setCurrentLang] = useState(lang === undefined?i18n.language:lang)
 
     let changLangOnClick = (lang) => {
         i18n.changeLanguage(lang)
         setCurrentLang(lang)
+        Cookies.set('lang',lang)
+        console.log('lang',lang)
     }
 
     return (
@@ -39,6 +45,13 @@ export default function ChangLangBtn() {
             <button
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'tw' ? 'active' : ''}`}
                 onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button>
+            <button
+                className={`d-none d-md-inline-block m-1 btn btn-light btn-sm`}
+                onClick={(e) => {
+                    e.preventDefault()
+                    window.location.href = resumeMode?'/':'/?mode=resume'
+                }}
+            >{resumeMode?t('網頁模式'):t('履歷模式')}</button>
         </LangBtnStyle>
     )
 }

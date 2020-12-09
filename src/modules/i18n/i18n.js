@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
+import Cookies from 'js-cookie'
 // the translations
 // (tip move them in a JSON file and import them)
 const resources = {
@@ -42,7 +42,9 @@ const resources = {
       "國立臺中科技大學":"National Taichung University of Science and Technology",
       "國立中興大學, 資訊科學與工研究所, 2019~2021":"NCHU, Computer Science and Engineering, 2019~2021",
       "國立臺中科技大學, 資訊工程學系, 2015~2019":"NUTC, Computer Science and Engineering, 2015~2019",
-      "網站設計與開發：":"Website design and develop by"
+      "網站設計與開發：":"Website design and develop by",
+      "履歷模式":"Resume",
+      "網頁模式":"Website"
     }
   },
   tw: {
@@ -50,11 +52,17 @@ const resources = {
   }
 };
 
+let lang = Cookies.get('lang');
+if(lang === undefined){
+  lang = 'en'
+}
+console.log('lang',lang)
+
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en",
+    lng:lang,
 
     keySeparator: false, // we do not use keys in form messages.welcome
 

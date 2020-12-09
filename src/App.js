@@ -13,15 +13,6 @@ import ChangLangBtn from './modules/i18n/changLangBtn'
 import { ModeContext } from './contexts'
 
 // styled
-const ResumeLink = styled.a`
-  @media print{
-    &:after {
-		    content: '(' attr(href) ')';
-    }
-    font-size:14px;
-  }
-`
-
 const AboutMe = styled.div`
   @media print{
     margin-left:16.6667%;
@@ -199,28 +190,8 @@ function App() {
               <InfoIcons className="mt-md-4 pt-md-1">
                 <span><img src={require('./assets/img/003-point.png')} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/004-mail.png')} alt="" srcSet="" />p208p2002@gmail.com</span><br />
-
-                {resumeMode ?
-                  <>
-                    <span className="mt-2 mt-sm-1"><img src={require('./assets/img/home.png')} alt="" srcSet="" />
-                      <a href="/">p208p2002.github.io</a></span><br />
-                  </>
-                  :
-                  <>
-                    <span className="mt-1"><img src={require('./assets/img/curriculum.png')} alt="" srcSet="" />
-                      <ResumeLink
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://p208p2002.github.io"
-                        onClick={(e) => {
-                          e.preventDefault()
-                          window.location.href = '/?mode=resume'
-                        }}>resume.me
-                      </ResumeLink>
-                    </span><br />
-                  </>
-                }
-
+                <span className="mt-2 mt-sm-1"><img src={require('./assets/img/linkedin.png')} alt="" srcSet="" />
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/p208p2002">linkedin.com/p208p2002</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
                   <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
