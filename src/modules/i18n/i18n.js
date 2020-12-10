@@ -44,7 +44,13 @@ const resources = {
       "國立臺中科技大學, 資訊工程學系, 2015~2019":"NUTC, Computer Science and Engineering, 2015~2019",
       "網站設計與開發：":"Website design and develop by",
       "履歷模式":"Resume",
-      "網頁模式":"Website"
+      "網頁模式":"Website",
+      "2019/09 - 現在":"2019/09 - Now",
+      "實驗室成員":"Lab Member",
+      "暑期實習生":"Summer Intern",
+      "中興大學 - 普及資料與智慧運算實驗室":"NCHU - Ubiquitous Data and Intelligent Computing Lab",
+      "工業技術研究院 - 資訊與通訊研究所":"ITRI - Information and Communications Research Laboratories",
+      "經歷":"Experience"
     }
   },
   tw: {

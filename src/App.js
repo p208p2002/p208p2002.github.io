@@ -7,6 +7,7 @@ import Header from './componments/header'
 import InfoBlock from './componments/infoBlock'
 import BlockTitle from './componments/blockTitle'
 import SkillBlock from './componments/skillBlock'
+import ExperienceBlock from './componments/experienceBlock'
 import Footer from './componments/footer'
 import { useTranslation } from 'react-i18next';
 import ChangLangBtn from './modules/i18n/changLangBtn'
@@ -62,6 +63,22 @@ function App() {
       school={t("國立臺中科技大學")}
       content={t("國立臺中科技大學, 資訊工程學系, 2015~2019")}
     />
+  ]
+
+  // experiences
+  const experiences = [
+    {
+      dateTime:t('2019/09 - 現在'),
+      image:<img src={require('./assets/img/udic.jpg')} alt='udic'/>,
+      text:t('中興大學 - 普及資料與智慧運算實驗室'),
+      title:t('實驗室成員')
+    },
+    {
+      dateTime:t('2020/07 - 2020/08'),
+      image:<img src={require('./assets/img/itri2.png')} alt='itri'/>,
+      text:t('工業技術研究院 - 資訊與通訊研究所'),
+      title:t('暑期實習生')
+    }
   ]
 
   // skills
@@ -209,6 +226,13 @@ function App() {
               {education}
             </div>
           })}
+        </div>
+        <br />
+
+        {/* experience */}
+        <div className="d-none d-md-block">
+          <BlockTitle>{t("經歷")}</BlockTitle>
+          <ExperienceBlock experiences={experiences}/>
         </div>
         <br />
 
