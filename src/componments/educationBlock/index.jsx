@@ -9,6 +9,8 @@ const Images = styled.div`
         margin-right: 20px;
         width: 72px;
         transition: 0.15s;
+        position:relative;
+        top:0px;
     }
 
     & img:hover{
@@ -17,6 +19,8 @@ const Images = styled.div`
         margin-right: 0px;
         width: 90px;
         transition: 0.3s;
+        position:relative;
+        top:9px;
     }
 
     & :nth-last-child(1){
