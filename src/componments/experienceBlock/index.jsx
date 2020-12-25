@@ -14,7 +14,7 @@ const Line = styled.div`
 
 const DateTime = styled.p`
     position:absolute;
-    top: 0px;
+    top: 10px;
     right:380px;
     width:150px;
     text-align:right;
@@ -23,9 +23,10 @@ const DateTime = styled.p`
 const Text = styled.div`
     text-align: center;
     width:300px;
-    padding: 10px;
+    padding: 12px;
+    border-radius: 5px;
     border:1px solid #6d6c77;
-    margin: 20px 10px;
+    margin: 35px 10px;
     position: relative;
     /* font-size:15px; */
 
@@ -50,20 +51,20 @@ const Text = styled.div`
         content: '';
         position: absolute;
         left: -18px;
-        top: 7px;
+        top: 18px;
         width: 0;
         height: 0;
-        border-top: 8px solid transparent;
-        border-left: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 10px solid #152238;
+        border-top: 6px solid transparent;
+        border-left: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-right: 8px solid #152238;
     }
 `
 
 const ImageContainer = styled.div`
     position: absolute;
     width:48px;
-    top:-10px;
+    top:0px;
     left:-67px;
     
     &>img{
