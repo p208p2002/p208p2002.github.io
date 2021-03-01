@@ -139,7 +139,7 @@ function App() {
       tags={['React', 'AI DEMO']}
       links={[
         { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint: true },
-        { name: 'Demo', type: 'demo', href: 'http://140.120.13.249:3000' }
+        { name: 'Demo', type: 'demo', href: 'http://app.queratorai.com' }
       ]}
     />,
     <ProjectBlock
