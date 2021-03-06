@@ -24,6 +24,8 @@ let LangBtnStyle = styled.div`
 
 let url = new URL(window.location.href)
 let resumeMode = (url.searchParams.get('mode') === 'resume' ? true : false)
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 
 export default function ChangLangBtn() {
     const { t, i18n } = useTranslation();
@@ -45,6 +47,9 @@ export default function ChangLangBtn() {
             <button
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'tw' ? 'active' : ''}`}
                 onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button>
+            {isMobile?
+            null
+            :
             <button
                 className={`d-none d-md-inline-block m-1 btn btn-light btn-sm`}
                 onClick={(e) => {
@@ -52,6 +57,8 @@ export default function ChangLangBtn() {
                     window.location.href = resumeMode?'/':'/?mode=resume'
                 }}
             >{resumeMode?t('網頁模式'):t('履歷模式')}</button>
+            }
+            
         </LangBtnStyle>
     )
 }
