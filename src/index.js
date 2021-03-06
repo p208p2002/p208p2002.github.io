@@ -42,6 +42,13 @@ const ResumeContainer = styled.div`
 
 let url = new URL(window.location.href)
 let resumeMode = (url.searchParams.get('mode') === 'resume' ? true : false)
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (resumeMode && isMobile){
+  //  force use pc view in resume mode
+  let viewport = document.querySelector("meta[name=viewport]");
+  viewport.setAttribute('content', 'width=1024');
+}
 
 ReactDOM.render(
   <React.StrictMode>
