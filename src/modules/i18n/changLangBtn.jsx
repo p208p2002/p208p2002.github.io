@@ -26,7 +26,7 @@ let LangBtnStyle = styled.div`
 
 let url = new URL(window.location.href)
 let resumeMode = (url.searchParams.get('mode') === 'resume' ? true : false)
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 export default function ChangLangBtn() {
     const { t, i18n } = useTranslation();
