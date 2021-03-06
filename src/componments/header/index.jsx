@@ -11,7 +11,7 @@ const TitleH1 = styled.h1`
 export class index extends Component {
     render() {
         return (
-            <div style={{ paddingTop: 10 }}>
+            <div style={{ paddingTop: 25 }}>
                 {/* desktop */}
                 <div className="row d-none d-md-flex text-center">
                     <div className="col">
