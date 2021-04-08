@@ -212,7 +212,7 @@ function App() {
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/001-cat.png')} alt="" srcSet="" />
                   <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
                 <span className="mt-2 mt-sm-1"><img src={require('./assets/img/002-wordpress.png')} alt="" srcSet="" />
-                  <a target="_blank" rel="noopener noreferrer" href="https://blog.thecodingday.com">blog.thecodingday.com</a></span><br />
+                  <a target="_blank" rel="noopener noreferrer" href="https://p208p2002.github.io/blog">p208p2002.github.io/blog</a></span><br />
               </InfoIcons>
             </InfoBlock>
           </div>
