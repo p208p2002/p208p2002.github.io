@@ -88,7 +88,7 @@ export class Index extends Component {
                             <Text key={i}>
                                 <DateTime>{data.dateTime}</DateTime>
                                 <ImageContainer>
-                                    {data.image}
+                                    <img src={data.image} alt={data.title}/>
                                 </ImageContainer>
                                 {data.text}
                                 <hr />

@@ -31,8 +31,9 @@ let resumeMode = (url.searchParams.get('mode') === 'resume' ? true : false)
 export default function ChangLangBtn() {
     const { t, i18n } = useTranslation();
     let lang = Cookies.get('lang');
+    // eslint-disable-next-line
     const [currentLang, setCurrentLang] = useState(lang === undefined?i18n.language:lang)
-
+    // eslint-disable-next-line
     let changLangOnClick = (lang) => {
         i18n.changeLanguage(lang)
         setCurrentLang(lang)
@@ -42,12 +43,12 @@ export default function ChangLangBtn() {
 
     return (
         <LangBtnStyle>
-            <button
+            {/* <button
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'en' ? 'active' : ''}`}
                 onClick={() => changLangOnClick('en')}>{t('English')}</button>
             <button
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'tw' ? 'active' : ''}`}
-                onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button>
+                onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button> */}
             <button
                 className={`m-1 btn btn-light btn-sm`}
                 onClick={(e) => {

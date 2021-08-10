@@ -17,6 +17,8 @@ import { ModeContext } from './contexts'
 import { yamlParser } from './utils'
 import projectContent from './contents/project.yaml'
 import educationContent from './contents/education.yaml'
+import experimentContent from './contents/experience.yaml'
+import skillContent from './contents/skill.yaml'
 
 
 // styled
@@ -62,7 +64,7 @@ function App() {
         console.log(res)
         // to Block
         let _educations = res.map((edu) => {
-        let { degree, image, school, content } = edu
+          let { degree, image, school, content } = edu
           return (
             <EducationBlock
               degree={degree}
@@ -77,60 +79,31 @@ function App() {
   }, [])
 
   // experiences
-  const experiences = [
-    // {
-    //   dateTime: t('2019/09 - 現在'),
-    //   image: <img src={require('./assets/img/udic.jpg')} alt='udic' />,
-    //   text: t('中興大學 - 普及資料與智慧運算實驗室'),
-    //   title: t('實驗室成員')
-    // },
-    // {
-    //   dateTime: t('2020/07 - 2020/08'),
-    //   image: <img src={require('./assets/img/itri2.png')} alt='itri' />,
-    //   text: t('工業技術研究院 - 資訊與通訊研究所'),
-    //   title: t('暑期實習生')
-    // }
-  ]
+  const [experiences, setExperiences] = useState([])
+  useEffect(() => {
+    yamlParser(experimentContent)
+      .then((res) => {
+        setExperiences(res)
+      })
+  }, [])
 
   // skills
-  const skills = [
-    // <SkillBlock
-    //   name={t("前端")}
-    //   images={[
-    //     { name: 'JavaScript ES6+', src: require('./assets/img/008-javascript.png') },
-    //     { name: 'React JS', src: require('./assets/img/react.ico') },
-    //     { name: 'Redux', src: require('./assets/img/redux.png') },
-    //   ]}
-    //   content={t("熟悉JS ES6與npm等熱門工具的使用，擅長使用ReactJS、Redux")}
-    // />,
-    // <SkillBlock
-    //   name={t("後端")}
-    //   images={[
-    //     { name: 'PHP 7', src: require('./assets/img/011-php.png') },
-    //     { name: 'Laravel', src: require('./assets/img/laravel.svg') },
-    //     { name: 'MySQL', src: require('./assets/img/012-mysql.png') }
-    //   ]}
-    //   content={t("使用Laravel開發RESTful風格API，與內容管理系統之經驗")}
-    // />,
-    // <SkillBlock
-    //   name={t("自然語言處理")}
-    //   images={[
-    //     { name: 'Python 3', src: require('./assets/img/010-python.png') },
-    //     { name: 'Pytorch', src: require('./assets/img/pytorch-logo.png') },
-    //     { name: 'Transformers', src: require('./assets/img/huggingface_logo.svg') },
-    //   ]}
-    //   content={t("搭配深度學習技術、框架(PyTorch)研究NLP相關項目")}
-    // />,
-    // <SkillBlock
-    //   name={t("其它")}
-    //   images={[
-    //     { name: 'Ubuntu', src: require('./assets/img/ubuntu.svg') },
-    //     { name: 'Docker', src: require('./assets/img/docker.svg') },
-    //     { name: 'Git & GitHub', src: require('./assets/img/github.svg') }
-    //   ]}
-    //   content={t("網站佈署流程與設定 / Docker管理 / 版本控制")}
-    // />
-  ]
+  const [skills, setSkills] = useState([])
+  useEffect(() => {
+    yamlParser(skillContent)
+      .then((res) => {
+        res = res.map((skill) => {
+          return (
+            <SkillBlock
+              name={skill.name}
+              images={skill.images}
+              content={skill.content}
+            />
+          )
+        })
+        setSkills(res)
+      })
+  }, [])
 
   // projects
   const [projects, setProjects] = useState([])
@@ -140,7 +113,7 @@ function App() {
         console.log(res)
         // to ProjectBlock
         let _projects = res.map((project) => {
-          let { name,previewImg,content,tags,gitRepoName,links } = project
+          let { name, previewImg, content, tags, gitRepoName, links } = project
           return (
             <ProjectBlock
               name={name}
@@ -163,16 +136,19 @@ function App() {
         <Header />
 
         <AboutMe className="row">
-          <div className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
+          <div style={{lineHeight:2}} className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
             <InfoBlock title={t("關於我")}>
-              <p>{t('全端開發與佈署經驗，熟悉ReactJS與相關主流套件')}</p>
-              <p>{t('目前是 UDIC@NCHU 的成員，主要研究領域為自然語言處理(Natural Language Processing)')}</p>
-              <p>{t('喜歡攝影、咖啡跟電影，偶爾做些Side Project')}</p>
+              <p>大學時開始接觸ReactJS，也對後端開發有所涉獵，曾經參與多家網銀前端開發。
+              研究所專攻自然語言處理，並且擔任實驗室網管，探索各類基於Transformers的預訓練語言模型(BERT, GPT, BART ...)之架構與應用，熟悉Transfromers、PyTorch與PyTorch Lightining等深度學習套件。
+              善於結合並且應用已經掌握的技術；暑期於工研院實習期間，負責的計畫包含關係抽取與抽取結果視覺化呈現等技術。
+              即將畢業於中興大學資工所。
+              喜歡攝影、咖啡跟電影，偶爾做些Side Project。
+              </p>
             </InfoBlock>
           </div>
           <div className="col-12 col-md-5">
             <InfoBlock>
-              <InfoIcons className="mt-md-4 pt-md-1">
+              <InfoIcons className="pt-md-5 mt-md-4 mb-5 text-center text-md-left">
                 <span><img src={'/assets/img/003-point.png'} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
                 <span className="mt-2 mt-sm-1"><img src={'/assets/img/004-mail.png'} alt="" srcSet="" />p208p2002@gmail.com</span><br />
                 <span className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" />

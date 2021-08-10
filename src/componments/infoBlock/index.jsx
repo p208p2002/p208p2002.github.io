@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components';
 const Title = styled.h3`
     margin-bottom: 12px;
+    text-align: center;
 `;
 const Content = styled.div`
     margin-top: 12px;
