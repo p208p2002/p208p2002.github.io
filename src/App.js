@@ -15,7 +15,8 @@ import { ModeContext } from './contexts'
 
 // 
 import { yamlParser } from './utils'
-import projectContent from './contents/projects.yaml'
+import projectContent from './contents/project.yaml'
+import educationContent from './contents/education.yaml'
 
 
 // styled
@@ -54,20 +55,26 @@ function App() {
 
   const { t } = useTranslation();
   // educations
-  const educations = [
-    // <EducationBlock
-    //   degree={t("碩士")}
-    //   image={require('./assets/img/nchu2.png')}
-    //   school={t("國立中興大學")}
-    //   content={t("國立中興大學, 資訊科學與工研究所, 2019~2021")}
-    // />,
-    // <EducationBlock
-    //   degree={t("學士")}
-    //   image={require('./assets/img/nutc.gif')}
-    //   school={t("國立臺中科技大學")}
-    //   content={t("國立臺中科技大學, 資訊工程學系, 2015~2019")}
-    // />
-  ]
+  const [educations, setEducations] = useState([])
+  useEffect(() => {
+    yamlParser(educationContent)
+      .then((res) => {
+        console.log(res)
+        // to Block
+        let _educations = res.map((edu) => {
+        let { degree, image, school, content } = edu
+          return (
+            <EducationBlock
+              degree={degree}
+              image={image}
+              school={school}
+              content={content}
+            />
+          )
+        })
+        setEducations(_educations)
+      })
+  }, [])
 
   // experiences
   const experiences = [
@@ -132,7 +139,7 @@ function App() {
       .then((res) => {
         console.log(res)
         // to ProjectBlock
-        let _projects = res.projects.map((project) => {
+        let _projects = res.map((project) => {
           let { name,previewImg,content,tags,gitRepoName,links } = project
           return (
             <ProjectBlock
