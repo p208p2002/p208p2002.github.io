@@ -1,0 +1,78 @@
+projects:
+  # - name:
+  #   previewImg: optional
+  #   content:
+  #   tags:
+  #   gitRepoName: optional (username/repo)
+  #   links:
+
+  - name: 台北QA問答機器人 
+    content: 基於實驗室蒐集的問答資料集之問答分類模型(使用BERT、ALBERT)
+    tags:
+    - NLP
+    - Pytorch
+    - BERT
+    gitRepoName: p208p2002/taipei-QA-BERT
+    links: [
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT', showInPrint: true },
+    ]
+  
+  - name: Querator AI 前端展示系統
+    previewImg: /assets/img/querator_ai.png
+    content: 問句生成的AI展示系統，負責前端系統開發與API設計
+    tags:
+      - React
+      - AI DEMO
+    links: [
+      { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint: true },
+      { name: 'Demo', type: 'demo', href: 'http://app.queratorai.com' }
+    ]
+  
+  - name: 鸚鵡兄弟文字圖產生器
+    previewImg: '/assets/img/yinwubrother.jpg'
+    content: 可愛的鸚鵡兄弟梗圖生產器、快速上字與分享
+    gitRepoName: p208p2002/yinwubrother-textmaker-react
+    tags:
+      - React
+      - RWD
+      - meme
+    links: [
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/yinwubrother-textmaker-react' },
+      { name: 'Demo', type: 'demo', href: 'https://p208p2002.github.io/yinwubrother-textmaker-react', showInPrint: true }
+    ]
+  
+  - name: 自動旅遊排程系統
+    previewImg: '/assets/img/qts.png'
+    content: 帶有旅遊景點資料庫的，全/半自動旅遊排程推薦系統。來一趟說走就走的旅遊🛫
+    tags: 
+      - React
+      - Laravel
+      - RWD
+    links: [
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/quick-travel-schedule' },
+      { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com', showInPrint: true }
+    ]
+  
+  - name: Docker for AI DEV
+    previewImg: /assets/img/docker_q.png
+    content: 快速建立包含Jupyter、web-vscode和cuda support在內的遠端開發環境
+    tags:
+      - Docker
+      - dev-env
+    gitRepoName: p208p2002/docker-for-ai-dev
+    links: [
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/docker-for-ai-dev', showInPrint: true },
+      { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev' }
+    ]
+
+  - name: PC Monitor
+    previewImg: /assets/img/pc-monitor.png
+    content: 角落懸浮電腦狀態監視器(CPU、RAM)
+    tags:
+      - React
+      - Electron
+    links: [
+      { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint: true },
+      { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }     
+    ]
+
