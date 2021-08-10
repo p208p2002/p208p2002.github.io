@@ -1,9 +1,14 @@
-- dateTime: 2019/09 - 現在
+- dateTime: 2019/09 - 2021/08
   image: assets/img/udic.jpg
-  text: 中興大學 - 普及資料與智慧運算實驗室
+  text: 中興大學 - 自然語言處理實驗室
   title: 實驗室成員
 
 - dateTime: 2020/07 - 2020/08
   image: assets/img/itri2.png
   text: 工業技術研究院 - 資訊與通訊研究所
   title: 暑期實習生
+
+- dateTime: 2021/10 - 現在
+  image: assets/img/itri2.png
+  text: 工業技術研究院 - 資訊與通訊研究所
+  title: 副工程師
