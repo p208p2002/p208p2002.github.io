@@ -1,0 +1,28 @@
+- name: 前端
+  images: [
+    { name: 'JavaScript ES6+', src: /assets/img/008-javascript.png },
+    { name: 'React JS', src: /assets/img/react.ico },
+    { name: 'Redux', src: /assets/img/redux.png }
+  ]
+  content: 熟悉JS ES6與npm等熱門工具的使用，擅長使用ReactJS、Redux
+- name: 後端
+  images: [
+    { name: 'PHP 7', src: /assets/img/011-php.png },
+    { name: 'Laravel', src: /assets/img/laravel.svg },
+    { name: 'MySQL', src: /assets/img/012-mysql.png }
+  ]
+  content: 使用Laravel開發RESTful風格API，與內容管理系統之經驗
+- name: 自然語言處理
+  images: [
+    { name: 'Python 3', src: /assets/img/010-python.png },
+    { name: 'Pytorch', src: /assets/img/pytorch-logo.png },
+    { name: 'Transformers', src: /assets/img/huggingface_logo.svg },
+  ]
+  content: 搭配深度學習技術、框架(PyTorch)研究NLP相關項目
+- name: 其它
+  images: [
+    { name: 'Ubuntu', src: /assets/img/ubuntu.svg },
+    { name: 'Docker', src: /assets/img/docker.svg },
+    { name: 'Git & GitHub', src: /assets/img/github.svg }
+  ]
+  content: 網站佈署流程與設定 / Docker管理 / 版本控制

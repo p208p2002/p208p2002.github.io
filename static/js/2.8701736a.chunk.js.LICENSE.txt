@@ -18,6 +18,8 @@ object-assign
  * Released under the MIT license
  */
 
+/*! js-yaml 4.1.0 https://github.com/nodeca/js-yaml @license MIT */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
