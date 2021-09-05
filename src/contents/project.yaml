@@ -26,7 +26,7 @@
   gitRepoName: p208p2002/Transformer-QG-on-SQuAD
   links: [
     { name: 'Github', type: 'code', href: 'https://github.com/p208p2002/Transformer-QG-on-SQuAD', showInPrint: true },
-    { name: 'HF Model Hub', type: 'web', href: 'hhttps://huggingface.co/p208p2002/bart-squad-qg-hl' }
+    { name: 'HF Model Hub', type: 'btn-warning', href: 'https://huggingface.co/p208p2002/bart-squad-qg-hl' }
   ]
 
 - name: Querator AI 前端展示系統
@@ -86,5 +86,15 @@
   links: [
     { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint: true },
     { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }     
+  ]
+  
+- name: 碩士論文
+  content: ''
+  tags:
+    - 即將公開
+  gitRepoName: p208p2002/Transformer-QG-on-SQuAD
+  links: [
+    { name: 'Github', type: 'code', href: '#', showInPrint: true },
+    { name: 'Paper', type: 'web', href: '#' }
   ]
 
