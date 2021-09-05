@@ -17,12 +17,24 @@
     { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT', showInPrint: true },
   ]
 
+- name: Transformer-QG-on-SQuAD
+  content: 基於SQuAD資料集的問句生成模型；擁有SOTA性能，可快速部署
+  tags:
+    - Flask
+    - Pytorch
+    - QG Model
+  gitRepoName: p208p2002/Transformer-QG-on-SQuAD
+  links: [
+    { name: 'Github', type: 'code', href: 'https://github.com/p208p2002/Transformer-QG-on-SQuAD', showInPrint: true },
+    { name: 'HF Model Hub', type: 'web', href: 'hhttps://huggingface.co/p208p2002/bart-squad-qg-hl' }
+  ]
+
 - name: Querator AI 前端展示系統
   previewImg: /assets/img/querator_ai.png
   content: 問句生成的AI展示系統，負責前端系統開發與API設計
   tags:
     - React
-    - AI DEMO
+    - AI Demo
   links: [
     { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint: true },
     { name: 'Demo', type: 'demo', href: 'http://app.queratorai.com' }
