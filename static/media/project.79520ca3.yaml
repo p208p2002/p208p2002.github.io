@@ -92,7 +92,6 @@
   content: ''
   tags:
     - 即將公開
-  gitRepoName: p208p2002/Transformer-QG-on-SQuAD
   links: [
     { name: 'Github', type: 'code', href: '#', showInPrint: true },
     { name: 'Paper', type: 'web', href: '#' }
