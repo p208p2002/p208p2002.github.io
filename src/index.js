@@ -7,13 +7,17 @@ import './assets/css/bootstrap.min.css'
 import './assets/css/animate.css'
 import './modules/i18n/i18n.js'
 import styled from 'styled-components'
-import { ModeContext } from './contexts'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers'
+import { setAppMode } from './actions'
+
+const store = createStore(rootReducer)
 
 const ResumeContainer = styled.div`
   padding-top:50px;
   padding-bottom:50px;
   background-color:#444444;
-  
   
   & > div{
     width:250mm;
@@ -50,20 +54,33 @@ if (resumeMode && isMobile) {
   viewport.setAttribute('content', 'width=1024');
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <ModeContext.Provider value={{ resume: resumeMode }}>
-      {resumeMode ?
-        <ResumeContainer>
-          <App />
-        </ResumeContainer>
-        :
-        <App />
-      }
-    </ModeContext.Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+let modeName = resumeMode ? 'resume' : 'normal'
+store.dispatch(setAppMode(modeName))
+
+function display(appMode) {
+  ReactDOM.render(
+    <React.StrictMode>
+        <Provider store={store}>
+          {appMode === 'resume' ?
+            <ResumeContainer>
+              <App />
+            </ResumeContainer>
+            :
+            <App />
+          }
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
+
+function handleChange() {
+  let { appMode } = store.getState()
+  display(appMode)
+}
+
+store.subscribe(handleChange)
+display(modeName)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

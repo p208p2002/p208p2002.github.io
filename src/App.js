@@ -11,8 +11,7 @@ import ExperienceBlock from './componments/experienceBlock'
 import Footer from './componments/footer'
 import { useTranslation } from 'react-i18next';
 import ChangLangBtn from './modules/i18n/changLangBtn'
-import { ModeContext } from './contexts'
-
+import { useSelector } from 'react-redux'
 // 
 import { yamlParser } from './utils'
 import projectContent from './contents/project.yaml'
@@ -52,9 +51,7 @@ const InfoIcons = styled.div`
 `;
 
 function App() {
-  const context = React.useContext(ModeContext),
-    { resume: resumeMode } = context
-
+  const appMode = useSelector((state) => state.appMode)
   const { t } = useTranslation();
   // educations
   const [educations, setEducations] = useState([])
@@ -193,7 +190,7 @@ function App() {
         <BlockTitle>{t("精選項目")}</BlockTitle>
         <ProjectContext className="row">
           {projects.map((project, index) => {
-            return <div key={index} className={`print-no-cut col-12 ${resumeMode ? 'col-lg-12' : 'col-lg-6'}`}>
+            return <div key={index} className={`print-no-cut col-12 ${appMode==='resume' ? 'col-lg-12' : 'col-lg-6'}`}>
               {project}
             </div>
           })}

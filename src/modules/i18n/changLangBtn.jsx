@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie'
+import { useSelector,useDispatch } from 'react-redux'
+import { setAppMode } from '../../actions'
 
 let LangBtnStyle = styled.div`
     position: fixed;
@@ -24,8 +26,6 @@ let LangBtnStyle = styled.div`
 `
 
 
-let url = new URL(window.location.href)
-let resumeMode = (url.searchParams.get('mode') === 'resume' ? true : false)
 // var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 export default function ChangLangBtn() {
@@ -41,6 +41,9 @@ export default function ChangLangBtn() {
         console.log('lang',lang)
     }
 
+    const appMode = useSelector((state)=>state.appMode)
+    const dispatch = useDispatch()
+
     return (
         <LangBtnStyle>
             {/* <button
@@ -53,10 +56,10 @@ export default function ChangLangBtn() {
                 className={`m-1 btn btn-light btn-sm`}
                 onClick={(e) => {
                     e.preventDefault()
-                    window.location.href = resumeMode?'/':'/?mode=resume'
+                    // window.location.href = appMode==='resume'?'/':'/?mode=resume'
+                    dispatch(setAppMode(appMode==='resume'?'normal':'resume'))
                 }}
-            >{resumeMode?t('網頁模式'):t('履歷模式')}</button>
-            
+            >{appMode==='resume'?t('網頁模式'):t('履歷模式')}</button>
         </LangBtnStyle>
     )
 }
