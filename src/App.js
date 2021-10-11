@@ -136,7 +136,7 @@ function App() {
           <div style={{lineHeight:2}} className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
             <InfoBlock title={t("關於我")}>
               <p>大學時開始接觸ReactJS，也對後端開發有所涉獵，曾經參與多家網銀前端開發。
-              研究所專攻自然語言處理，並且擔任實驗室網管，探索各類基於Transformers的預訓練語言模型(BERT, GPT, BART ...)之架構與應用，熟悉Transfromers、PyTorch與PyTorch Lightining等深度學習套件。
+              研究所專攻自然語言處理(NLP)，並且擔任實驗室網管，探索各類基於Transformers的預訓練語言模型(BERT, GPT, BART ...)之架構與應用，熟悉Transfromers、PyTorch與PyTorch Lightining等深度學習套件。
               善於結合並且應用已經掌握的技術；暑期實習期間，負責的計畫包含使用語言模型分析文章與視覺化呈現等技術。
               喜歡攝影、黑咖啡、遊戲、動畫跟電影，偶爾做些Side Project。目前在工研院資通所擔任NLP工程師(研發替代役)。
               </p>
