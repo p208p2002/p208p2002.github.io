@@ -77,23 +77,23 @@
     { name: 'Docker Hub', type: 'btn-primary', href: 'https://hub.docker.com/r/p208p2002/docker-for-ai-dev' }
   ]
 
-- name: PC Monitor
-  previewImg: /assets/img/pc-monitor.png
-  content: 角落懸浮電腦狀態監視器(CPU、RAM)
-  tags:
-    - React
-    - Electron
-  links: [
-    { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint: true },
-    { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }     
-  ]
+# - name: PC Monitor
+#   previewImg: /assets/img/pc-monitor.png
+#   content: 角落懸浮電腦狀態監視器(CPU、RAM)
+#   tags:
+#     - React
+#     - Electron
+#   links: [
+#     { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/pc-monitor', showInPrint: true },
+#     { name: 'Download', type: 'web', href: 'https://github.com/p208p2002/pc-monitor/releases' }     
+#   ]
   
-- name: 碩士論文
-  content: ''
-  tags:
-    - 即將公開
-  links: [
-    { name: 'Github', type: 'code', href: '#', showInPrint: true },
-    { name: 'Paper', type: 'web', href: '#' }
-  ]
+# - name: 碩士論文
+#   content: ''
+#   tags:
+#     - 即將公開
+#   links: [
+#     { name: 'Github', type: 'code', href: '#', showInPrint: true },
+#     { name: 'Paper', type: 'web', href: '#' }
+#   ]
 
