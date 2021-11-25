@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import styled from 'styled-components'
+import HonorBlock from './componments/honorBlock'
 import EducationBlock from './componments/educationBlock'
 import ProjectBlock from './componments/projectBlock'
 import Header from './componments/header'
@@ -18,6 +19,7 @@ import projectContent from './contents/project.yaml'
 import educationContent from './contents/education.yaml'
 import experimentContent from './contents/experience.yaml'
 import skillContent from './contents/skill.yaml'
+import honorContent from './contents/honor.yaml'
 
 
 // styled
@@ -72,6 +74,15 @@ function App() {
           )
         })
         setEducations(_educations)
+      })
+  }, [])
+
+  // honors
+  const [honors, setHonors] = useState([])
+  useEffect(() => {
+    yamlParser(honorContent)
+      .then((res) => {
+        setHonors(res)
       })
   }, [])
 
@@ -133,12 +144,12 @@ function App() {
         <Header />
 
         <AboutMe className="row">
-          <div style={{lineHeight:2}} className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
+          <div style={{ lineHeight: 2 }} className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
             <InfoBlock title={t("關於我")}>
               <p>大學時開始接觸ReactJS，也對後端開發有所涉獵，曾經參與多家網銀前端開發。
-              研究所專攻自然語言處理(NLP)，並且擔任實驗室網管，探索各類基於Transformers的預訓練語言模型(BERT, GPT, BART ...)之架構與應用，熟悉Transfromers、PyTorch與PyTorch Lightining等深度學習套件。
-              善於結合並且應用已經掌握的技術；暑期實習期間，負責的計畫包含使用語言模型分析文章與視覺化呈現等技術。
-              喜歡攝影、黑咖啡、遊戲、動畫跟電影，偶爾做些Side Project。目前在工研院資通所擔任NLP工程師(研發替代役)。
+                研究所專攻自然語言處理(NLP)，並且擔任實驗室網管，探索各類基於Transformers的預訓練語言模型(BERT, GPT, BART ...)之架構與應用，熟悉Transfromers、PyTorch與PyTorch Lightining等深度學習套件。
+                善於結合並且應用已經掌握的技術；暑期實習期間，負責的計畫包含使用語言模型分析文章與視覺化呈現等技術。
+                喜歡攝影、黑咖啡、遊戲、動畫跟電影，偶爾做些Side Project。目前在工研院資通所任職。
               </p>
             </InfoBlock>
           </div>
@@ -176,6 +187,21 @@ function App() {
         </div>
         <br />
 
+        {/* honor */}
+        <BlockTitle>{t("榮譽事蹟")}</BlockTitle>
+        {
+          (() => {
+            return (
+              honors.map((honor, index) => {
+                return (
+                  <HonorBlock honor={honor} key={index} />
+                )
+              })
+            )
+          })()
+        }
+        <br />
+
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
         <div className="row">
@@ -190,7 +216,7 @@ function App() {
         <BlockTitle>{t("精選項目")}</BlockTitle>
         <ProjectContext className="row">
           {projects.map((project, index) => {
-            return <div key={index} className={`print-no-cut col-12 ${appMode==='resume' ? 'col-lg-12' : 'col-lg-6'}`}>
+            return <div key={index} className={`print-no-cut col-12 ${appMode === 'resume' ? 'col-lg-6 col-md-12' : 'col-lg-6'}`}>
               {project}
             </div>
           })}
