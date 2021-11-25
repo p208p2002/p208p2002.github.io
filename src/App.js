@@ -183,22 +183,18 @@ function App() {
         {/* experience */}
         <div className="d-none d-md-block">
           <BlockTitle>{t("經歷")}</BlockTitle>
-          <ExperienceBlock experiences={experiences} />
+          <ExperienceBlock experiences={experiences.slice().reverse()} />
         </div>
         <br />
 
         {/* honor */}
         <BlockTitle>{t("榮譽事蹟")}</BlockTitle>
         {
-          (() => {
+          honors.slice().reverse().map((honor, index) => {
             return (
-              honors.map((honor, index) => {
-                return (
-                  <HonorBlock honor={honor} key={index} />
-                )
-              })
+              <HonorBlock honor={honor} key={index} />
             )
-          })()
+          })
         }
         <br />
 

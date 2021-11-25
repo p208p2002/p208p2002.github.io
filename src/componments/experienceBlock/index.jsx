@@ -80,7 +80,6 @@ const ImageContainer = styled.div`
 export class Index extends Component {
     render() {
         let { experiences = [] } = this.props
-        experiences = experiences.reverse()
         return (
             <Container>
                 <Line>
