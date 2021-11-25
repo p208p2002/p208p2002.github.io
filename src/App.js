@@ -172,21 +172,10 @@ function App() {
         </AboutMe>
         <br />
 
-        {/* education */}
-        <BlockTitle>{t('學歷')}</BlockTitle>
-        <div className="row">
-          {educations.map((education, index) => {
-            return <div key={index} className="col-6">
-              {education}
-            </div>
-          })}
-        </div>
-        <br />
-
         {/* experience */}
         {/* <div className="d-none d-md-block"> */}
-          <BlockTitle>{t("經歷")}</BlockTitle>
-          <ExperienceBlock experiences={experiences.slice().reverse()} />
+        <BlockTitle>{t("經歷")}</BlockTitle>
+        <ExperienceBlock experiences={experiences.slice().reverse()} />
         {/* </div> */}
         <br />
 
@@ -220,6 +209,20 @@ function App() {
             </div>
           })}
         </ProjectContext>
+        <br/>
+
+        {/* education */}
+        <BlockTitle>{t('學歷')}</BlockTitle>
+        <div className="row">
+          {educations.map((education, index) => {
+            return <div key={index} className="col-6">
+              {education}
+            </div>
+          })}
+        </div>
+        <br />
+        <br/>
+
       </PageContext>
 
       {/* footer */}
