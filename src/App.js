@@ -68,6 +68,7 @@ const InfoIcons = styled.div`
 `;
 
 function App() {
+  // eslint-disable-next-line
   const appMode = useSelector((state) => state.appMode)
   const { t } = useTranslation();
   // educations

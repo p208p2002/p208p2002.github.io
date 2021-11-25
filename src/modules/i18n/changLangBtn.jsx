@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie'
 import { useSelector,useDispatch } from 'react-redux'
+// eslint-disable-next-line
 import { setAppMode } from '../../actions'
 
 let LangBtnStyle = styled.div`
@@ -42,6 +43,7 @@ export default function ChangLangBtn() {
     }
 
     const appMode = useSelector((state)=>state.appMode)
+    // eslint-disable-next-line
     const dispatch = useDispatch()
 
     return (
