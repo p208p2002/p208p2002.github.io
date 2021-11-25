@@ -13,19 +13,12 @@ export class index extends Component {
         return (
             <div style={{ paddingTop: 25 }}>
                 {/* desktop */}
-                <div className="row d-none d-md-flex text-center">
+                <div className="row d-md-flex text-center">
                     <div className="col">
                         <TitleH1>Philip Huang</TitleH1>
                         <small>You have to believe in yourself. That's the secret of success.</small>
                     </div>
                 </div>
-                {/* mobile */}
-                <div className="d-md-none">
-                    <TitleH1>Philip Huang</TitleH1>
-                    <small>You have to believe in yourself.</small><br/>
-                    <small>That's the secret of success.</small>
-                </div>
-                <hr />
             </div>
         )
     }

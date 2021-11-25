@@ -42,6 +42,12 @@ const PageContext = styled.div`
 `
 
 const InfoIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  flex-wrap: wrap;
+  /* margin-left:5%; */
+  margin-top:10px;
   & img {
     width: 24px;
     margin-right: 10px;
@@ -49,6 +55,16 @@ const InfoIcons = styled.div`
   & span {
     display: inline-block;
     margin-bottom: 5px;
+    margin-left:3%;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 15%;
+    & span {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left:3%;
+    width:100%;
+  }
   }
 `;
 
@@ -142,32 +158,19 @@ function App() {
       <ChangLangBtn />
       <PageContext className="container" style={{ backgroundColor: 'white' }}>
         <Header />
-
-        <AboutMe className="row">
-          <div style={{ lineHeight: 2 }} className="col-12 col-md-5 offset-lg-2 pt-3 pb-md-3">
-            <InfoBlock title={t("關於我")}>
-              <p>大學時開始接觸ReactJS，也對後端開發有所涉獵，曾經參與多家網銀前端開發。
-                研究所專攻自然語言處理(NLP)，並且擔任實驗室網管，探索各類基於Transformers的預訓練語言模型(BERT, GPT, BART ...)之架構與應用，熟悉Transfromers、PyTorch與PyTorch Lightining等深度學習套件。
-                善於結合並且應用已經掌握的技術；暑期實習期間，負責的計畫包含使用語言模型分析文章與視覺化呈現等技術。
-                喜歡攝影、黑咖啡、遊戲、動畫跟電影，偶爾做些Side Project。目前在工研院資通所任職。
-              </p>
-            </InfoBlock>
-          </div>
-          <div className="col-12 col-md-5">
-            <InfoBlock>
-              <InfoIcons className="pt-md-5 mt-md-4 mb-5 text-center text-md-left">
-                <span><img src={'/assets/img/003-point.png'} alt="" srcSet="" />{t('臺灣，臺中')}</span><br />
-                <span className="mt-2 mt-sm-1"><img src={'/assets/img/004-mail.png'} alt="" srcSet="" />p208p2002@gmail.com</span><br />
-                <span className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" />
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/p208p2002">linkedin.com/in/p208p2002</a></span><br />
-                <span className="mt-2 mt-sm-1"><img src={'/assets/img/001-cat.png'} alt="" srcSet="" />
-                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span><br />
-                <span className="mt-2 mt-sm-1"><img src={'/assets/img/002-wordpress.png'} alt="" srcSet="" />
-                  <a target="_blank" rel="noopener noreferrer" href="https://p208p2002.github.io/blog">p208p2002.github.io/blog</a></span><br />
-              </InfoIcons>
-            </InfoBlock>
-          </div>
+        <AboutMe className="center">
+          <InfoIcons className="">
+            {/* <span><img src={'/assets/img/003-point.png'} alt="" srcSet="" />{t('臺灣，臺中')}</span><br /> */}
+            <span className="mt-2 mt-sm-1"><img src={'/assets/img/004-mail.png'} alt="" srcSet="" />p208p2002@gmail.com</span>
+            <span className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" />
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/p208p2002">linkedin.com/in/p208p2002</a></span>
+            <span className="mt-2 mt-sm-1"><img src={'/assets/img/001-cat.png'} alt="" srcSet="" />
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span>
+            {/* <span className="mt-2 mt-sm-1"><img src={'/assets/img/002-wordpress.png'} alt="" srcSet="" />
+              <a target="_blank" rel="noopener noreferrer" href="https://p208p2002.github.io/blog">p208p2002.github.io/blog</a></span> */}
+          </InfoIcons>
         </AboutMe>
+        <br />
 
         {/* education */}
         <BlockTitle>{t('學歷')}</BlockTitle>
