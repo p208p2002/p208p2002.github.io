@@ -183,10 +183,10 @@ function App() {
         <br />
 
         {/* experience */}
-        <div className="d-none d-md-block">
+        {/* <div className="d-none d-md-block"> */}
           <BlockTitle>{t("經歷")}</BlockTitle>
           <ExperienceBlock experiences={experiences.slice().reverse()} />
-        </div>
+        {/* </div> */}
         <br />
 
         {/* honor */}

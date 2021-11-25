@@ -5,6 +5,9 @@ const Container = styled.div`
     width: 360px;
     margin: 30px auto;
     padding-left: 40px;
+    @media screen and (max-width: 768px) {
+        padding-left: 20px;
+    }
 `
 
 const Line = styled.div`
@@ -18,6 +21,9 @@ const DateTime = styled.p`
     right:380px;
     width:150px;
     text-align:right;
+    @media screen and (max-width: 768px) {
+        display:none;
+    }
 `
 
 const Text = styled.div`
