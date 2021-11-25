@@ -53,11 +53,11 @@ export default function ChangLangBtn() {
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'tw' ? 'active' : ''}`}
                 onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button> */}
             <button
-                className={`m-1 btn btn-light btn-sm`}
+                className={`m-1 btn btn-light btn-sm d-none d-md-block`}
                 onClick={(e) => {
                     e.preventDefault()
-                    // window.location.href = appMode==='resume'?'/':'/?mode=resume'
-                    dispatch(setAppMode(appMode==='resume'?'normal':'resume'))
+                    window.location.href = appMode==='resume'?'/':'/?mode=resume'
+                    // dispatch(setAppMode(appMode==='resume'?'normal':'resume'))
                 }}
             >{appMode==='resume'?t('網頁模式'):t('履歷模式')}</button>
         </LangBtnStyle>
