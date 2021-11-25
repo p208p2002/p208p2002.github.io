@@ -23,15 +23,15 @@ import honorContent from './contents/honor.yaml'
 
 // styled
 const AboutMe = styled.div`
-  @media print{
+  /* @media print{
     margin-left:16.6667%;
-  }
+  } */
 `
 
 const ProjectContext = styled.div`
-  @media print{
+  /* @media print{
     display:block !important;
-  }
+  } */
 `
 
 const PageContext = styled.div`
@@ -214,7 +214,7 @@ function App() {
         <BlockTitle>{t("精選項目")}</BlockTitle>
         <ProjectContext className="row">
           {projects.map((project, index) => {
-            return <div key={index} className={`print-no-cut col-12 ${appMode === 'resume' ? 'col-lg-6 col-md-12' : 'col-lg-6'}`}>
+            return <div key={index} className={`col-12 col-lg-6 col-md-12`}>
               {project}
             </div>
           })}
