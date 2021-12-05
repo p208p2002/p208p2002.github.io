@@ -1,7 +1,7 @@
 {
   "name": "my-web",
   "version": "0.1.0",
-  "homepage": "https://me.philip-huang.tech",
+  "homepage": "https://philip-huang.tech",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
