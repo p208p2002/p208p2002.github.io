@@ -161,7 +161,7 @@ function App() {
         <AboutMe className="center">
           <InfoIcons className="">
             {/* <span><img src={'/assets/img/003-point.png'} alt="" srcSet="" />{t('臺灣，臺中')}</span><br /> */}
-            <span className="mt-2 mt-sm-1"><img src={'/assets/img/004-mail.png'} alt="" srcSet="" />p208p2002@gmail.com</span>
+            <span className="mt-2 mt-sm-1"><img src={'/assets/img/004-mail.png'} alt="" srcSet="" />me@philip-huang.tech</span>
             <span className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" />
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/philip-huang">linkedin.com/in/philip-huang</a></span>
             <span className="mt-2 mt-sm-1"><img src={'/assets/img/001-cat.png'} alt="" srcSet="" />
