@@ -124,7 +124,7 @@ export class projectBlock extends Component {
         let { tags = [], links = [], previewImg = '/assets/img/001-cat.png' } = this.props
         let { hasGitRepoName, fetchingRepoStatus, forks_count = 0, stargazers_count = 0 } = this.state
         return (
-            <BlockContainer className="card">
+            <BlockContainer className="card" style={{borderWidth:0}}>
                 {hasGitRepoName ?
                     <Status>
                         {fetchingRepoStatus ?
