@@ -6,23 +6,39 @@
   #   gitRepoName: optional (username/repo)
   #   links:
 
+- name: Neural Question Group Generation
+  previewImg: /assets/img/bart.png
+  content: 結合預訓練語言模型、基因演算法與負標籤學習進行教育類型題組生成
+  tags:
+    - NLP
+    - Transformer Model
+    - Genetic Algorithm
+    - Negative Label Learning
+  gitRepoName: p208p2002/Neural-Question-Group-Generation
+  links: [
+    { name: 'GitHub', type: 'code', href: 'p208p2002/Neural-Question-Group-Generation', showInPrint: true },
+    { name: 'Demo', type: 'demo', href: 'https://qgg-demo.nlpnchu.org' },
+  ]
+
 - name: 台北QA問答機器人 
   content: 基於實驗室蒐集的問答資料集之問答分類模型(使用BERT、ALBERT)
   tags:
   - NLP
   - Pytorch
   - BERT
+  previewImg: /assets/img/taipei-101.png
   gitRepoName: p208p2002/taipei-QA-BERT
   links: [
     { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/taipei-QA-BERT', showInPrint: true },
   ]
 
-- name: Transformer-QG-on-SQuAD
+- name: Transformer QG on SQuAD
   content: 基於SQuAD資料集的問句生成模型；擁有SOTA性能，可快速部署
   tags:
     - Flask
     - Pytorch
     - QG Model
+  previewImg: /assets/img/unicorn.png
   gitRepoName: p208p2002/Transformer-QG-on-SQuAD
   links: [
     { name: 'Github', type: 'code', href: 'https://github.com/p208p2002/Transformer-QG-on-SQuAD', showInPrint: true },
@@ -53,17 +69,17 @@
     { name: 'Demo', type: 'demo', href: 'https://p208p2002.github.io/yinwubrother-textmaker-react', showInPrint: true }
   ]
 
-- name: 自動旅遊排程系統
-  previewImg: '/assets/img/qts.png'
-  content: 帶有旅遊景點資料庫的，全/半自動旅遊排程推薦系統。來一趟說走就走的旅遊🛫
-  tags: 
-    - React
-    - Laravel
-    - RWD
-  links: [
-    { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/quick-travel-schedule' },
-    { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com', showInPrint: true }
-  ]
+# - name: 自動旅遊排程系統
+#   previewImg: '/assets/img/qts.png'
+#   content: 帶有旅遊景點資料庫的，全/半自動旅遊排程推薦系統。來一趟說走就走的旅遊🛫
+#   tags: 
+#     - React
+#     - Laravel
+#     - RWD
+#   links: [
+#     { name: 'GitHub', type: 'code', href: 'https://github.com/p208p2002/quick-travel-schedule' },
+#     { name: 'Demo', type: 'demo', href: 'https://quicktravel.thecodingday.com', showInPrint: true }
+#   ]
 
 - name: Docker for AI DEV
   previewImg: /assets/img/docker_q.png
