@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import styled from 'styled-components'
-import HonorBlock from './componments/honorBlock'
 import EducationBlock from './componments/educationBlock'
 import ProjectBlock from './componments/projectBlock'
 import Header from './componments/header'
 import BlockTitle from './componments/blockTitle'
 import SkillBlock from './componments/skillBlock'
-import ExperienceBlock from './componments/experienceBlock'
 import Footer from './componments/footer'
 import { useTranslation } from 'react-i18next';
 import ChangLangBtn from './modules/i18n/changLangBtn'
@@ -16,10 +14,7 @@ import { useSelector } from 'react-redux'
 import { yamlParser } from './utils'
 import projectContent from './contents/project.yaml'
 import educationContent from './contents/education.yaml'
-import experimentContent from './contents/experience.yaml'
 import skillContent from './contents/skill.yaml'
-import honorContent from './contents/honor.yaml'
-
 
 // styled
 const AboutMe = styled.div`
@@ -93,24 +88,6 @@ function App() {
       })
   }, [])
 
-  // honors
-  const [honors, setHonors] = useState([])
-  useEffect(() => {
-    yamlParser(honorContent)
-      .then((res) => {
-        setHonors(res)
-      })
-  }, [])
-
-  // experiences
-  const [experiences, setExperiences] = useState([])
-  useEffect(() => {
-    yamlParser(experimentContent)
-      .then((res) => {
-        setExperiences(res)
-      })
-  }, [])
-
   // skills
   const [skills, setSkills] = useState([])
   useEffect(() => {
@@ -172,23 +149,6 @@ function App() {
         </AboutMe>
         <br />
 
-        {/* experience */}
-        {/* <div className="d-none d-md-block"> */}
-        <BlockTitle>{t("經歷")}</BlockTitle>
-        <ExperienceBlock experiences={experiences.slice().reverse()} />
-        {/* </div> */}
-        <br />
-
-        {/* honor */}
-        <BlockTitle>{t("榮譽事蹟")}</BlockTitle>
-        {
-          honors.slice().reverse().map((honor, index) => {
-            return (
-              <HonorBlock honor={honor} key={index} />
-            )
-          })
-        }
-        <br />
 
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
