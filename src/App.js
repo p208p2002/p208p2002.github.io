@@ -43,6 +43,13 @@ const InfoIcons = styled.div`
   & img {
     width: 24px;
     margin-right: 10px;
+    filter: opacity(70%);
+    
+  }
+  & img:hover {
+    width: 24px;
+    margin-right: 10px;
+    filter: opacity(100%);
   }
   & span {
     display: inline-block;
@@ -81,7 +88,7 @@ function App() {
         })
         setSkills(res)
       })
-  // eslint-disable-next-line
+    // eslint-disable-next-line
   }, [])
 
   // projects
@@ -115,18 +122,28 @@ function App() {
         <Header />
         <AboutMe className="center">
           <InfoIcons className="">
-            <span className="mt-2 mt-sm-1"><img src={'/assets/img/004-mail.png'} alt="" srcSet="" />me@philip-huang.tech</span>
-            <span className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" />
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/philip-huang">linkedin.com/in/philip-huang</a></span>
-            <span className="mt-2 mt-sm-1"><img src={'/assets/img/001-cat.png'} alt="" srcSet="" />
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">github.com/p208p2002</a></span>
-            {/* <span className="mt-2 mt-sm-1"><img src={'/assets/img/002-wordpress.png'} alt="" srcSet="" />
-              <a target="_blank" rel="noopener noreferrer" href="https://p208p2002.github.io/blog">p208p2002.github.io/blog</a></span> */}
+            <span data-tip="me@philip-huang.tech" className="mt-2 mt-sm-1"><img src={'/assets/img/gmail.png'} alt="" srcSet="" />
+            </span>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/philip-huang">
+              <span data-tip="linkedin.com/in/philip-huang" className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" /></span>
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/p208p2002">
+              <span data-tip="github.com/p208p2002" className="mt-2 mt-sm-1"><img src={'/assets/img/001-cat.png'} alt="" srcSet="" /></span>
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/p208p2002">
+              <span data-tip="huggingface.co/p208p2002" className="mt-2 mt-sm-1"><img src={'/assets/img/huggingface_logo.svg'} alt="" srcSet="" /></span>
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://p208p2002.github.io/blog">
+              <span data-tip="p208p2002.github.io/blog" className="mt-2 mt-sm-1"><img src={'/assets/img/blogger.png'} alt="" srcSet="" /></span>
+            </a>
           </InfoIcons>
         </AboutMe>
         <br />
-
-
+        
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
         <div className="row">
@@ -146,8 +163,8 @@ function App() {
             </div>
           })}
         </ProjectContext>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
       </PageContext>
 

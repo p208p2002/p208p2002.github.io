@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+const Container = styled.div``
+
 const Title = styled.h3`
     text-align:center;
 `;
@@ -8,11 +10,12 @@ const Title = styled.h3`
 export class index extends Component {
     render() {
         return (
-            <>
+           <>
+            <Container>
                 <Title>{this.props.children}</Title>
-                <hr/>
-                <br/>
-            </>
+            </Container>
+            <hr />
+           </>
         )
     }
 }
