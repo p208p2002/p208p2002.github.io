@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import styled from 'styled-components'
-import EducationBlock from './componments/educationBlock'
 import ProjectBlock from './componments/projectBlock'
 import Header from './componments/header'
 import BlockTitle from './componments/blockTitle'
@@ -13,7 +12,6 @@ import { useSelector } from 'react-redux'
 // 
 import { yamlParser } from './utils'
 import projectContent from './contents/project.yaml'
-import educationContent from './contents/education.yaml'
 import skillContent from './contents/skill.yaml'
 
 // styled
@@ -66,27 +64,6 @@ function App() {
   // eslint-disable-next-line
   const appMode = useSelector((state) => state.appMode)
   const { t } = useTranslation();
-  // educations
-  const [educations, setEducations] = useState([])
-  useEffect(() => {
-    yamlParser(educationContent)
-      .then((res) => {
-        console.log(res)
-        // to Block
-        let _educations = res.map((edu) => {
-          let { degree, image, school, content } = edu
-          return (
-            <EducationBlock
-              degree={degree}
-              image={image}
-              school={school}
-              content={content}
-            />
-          )
-        })
-        setEducations(_educations)
-      })
-  }, [])
 
   // skills
   const [skills, setSkills] = useState([])
@@ -170,17 +147,6 @@ function App() {
           })}
         </ProjectContext>
         <br/>
-
-        {/* education */}
-        <BlockTitle>{t('學歷')}</BlockTitle>
-        <div className="row">
-          {educations.map((education, index) => {
-            return <div key={index} className="col-6">
-              {education}
-            </div>
-          })}
-        </div>
-        <br />
         <br/>
 
       </PageContext>
