@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie'
-import { useSelector,useDispatch } from 'react-redux'
 // eslint-disable-next-line
-import { setAppMode } from '../../actions'
+import { useSelector,useDispatch } from 'react-redux'
 
 let LangBtnStyle = styled.div`
     position: fixed;
@@ -40,28 +39,27 @@ export default function ChangLangBtn() {
         setCurrentLang(lang)
         Cookies.set('lang',lang)
         console.log('lang',lang)
+        window.location.reload();
     }
 
-    const appMode = useSelector((state)=>state.appMode)
     // eslint-disable-next-line
-    const dispatch = useDispatch()
+    const appMode = useSelector((state)=>state.appMode)
 
     return (
         <LangBtnStyle>
-            {/* <button
+            <button
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'en' ? 'active' : ''}`}
                 onClick={() => changLangOnClick('en')}>{t('English')}</button>
             <button
                 className={`m-1 btn btn-light btn-sm ${currentLang === 'tw' ? 'active' : ''}`}
-                onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button> */}
-            <button
+                onClick={() => changLangOnClick('tw')}>{t('繁體中文')}</button>
+            {/* <button
                 className={`m-1 btn btn-light btn-sm d-none d-md-block`}
                 onClick={(e) => {
                     e.preventDefault()
                     window.location.href = appMode==='resume'?'/':'/?mode=resume'
-                    // dispatch(setAppMode(appMode==='resume'?'normal':'resume'))
                 }}
-            >{appMode==='resume'?t('網頁模式'):t('履歷模式')}</button>
+            >{appMode==='resume'?t('網頁模式'):t('履歷模式')}</button> */}
         </LangBtnStyle>
     )
 }
