@@ -137,8 +137,8 @@ function App() {
               <span data-tip="huggingface.co/p208p2002" className="mt-2 mt-sm-1"><img src={'/assets/img/huggingface_logo.svg'} alt="" srcSet="" /></span>
             </a>
 
-            <a target="_blank" rel="noopener noreferrer" href="https://p208p2002.github.io/blog">
-              <span data-tip="p208p2002.github.io/blog" className="mt-2 mt-sm-1"><img src={'/assets/img/blogger.png'} alt="" srcSet="" /></span>
+            <a target="_blank" rel="noopener noreferrer" href="https://blog.philip-huang.tech">
+              <span data-tip="https://blog.philip-huang.tech" className="mt-2 mt-sm-1"><img src={'/assets/img/blogger.png'} alt="" srcSet="" /></span>
             </a>
           </InfoIcons>
         </AboutMe>
