@@ -122,8 +122,10 @@ function App() {
         <Header />
         <AboutMe className="center">
           <InfoIcons className="">
-            <span data-tip="me@philip-huang.tech" className="mt-2 mt-sm-1"><img src={'/assets/img/gmail.png'} alt="" srcSet="" />
-            </span>
+            <a href="/#">
+              <span data-tip="me@philip-huang.tech" className="mt-2 mt-sm-1"><img src={'/assets/img/gmail.png'} alt="" srcSet="" />
+              </span>
+            </a>
 
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/philip-huang">
               <span data-tip="linkedin.com/in/philip-huang" className="mt-2 mt-sm-1"><img src={'assets/img/linkedin.png'} alt="" srcSet="" /></span>
@@ -143,7 +145,7 @@ function App() {
           </InfoIcons>
         </AboutMe>
         <br />
-        
+
         {/* skills */}
         <BlockTitle>{t('技術棧')}</BlockTitle>
         <div className="row">
