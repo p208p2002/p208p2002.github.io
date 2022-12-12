@@ -47,10 +47,11 @@
 
 - name: Querator AI 前端展示系統
   previewImg: /assets/img/querator_ai.png
-  content: 問句生成的AI展示系統，負責前端系統開發與API設計
+  content: 一套以BERT模型為基礎的問句生成展示系統
   tags:
     - React
     - AI Demo
+    - BERT-QG
   links: [
     { name: 'Querator AI', type: 'web', href: 'http://udiclab.cs.nchu.edu.tw/querator.html', showInPrint: true },
     { name: 'Demo', type: 'demo', href: 'http://app.queratorai.com' }
